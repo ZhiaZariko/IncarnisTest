@@ -1,0 +1,958 @@
+﻿<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<Export xmlns="http://www.nevigo.com/schemas/articydraft/3.1/XmlContentExport_FullProject.xsd" Version="3.1" CreatorTool="articy:draft" CreatorVersion="3.1.33" CreatedOn="2022-04-27T12:28:25Z">
+  <Settings>
+    <ExportMarkup>1</ExportMarkup>
+    <ExportQueries>1</ExportQueries>
+    <WriteNamespace>1</WriteNamespace>
+    <WriteAllVariables>0</WriteAllVariables>
+  </Settings>
+  <Content>
+    <Project Id="0x0100000000000001">
+      <DisplayName>PixelCrusherTest</DisplayName>
+      <TechnicalName>Pixelcrushertest</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037927937</Url>
+    </Project>
+    <ProjectSettings Id="0x03000000F917511B">
+      <FlowSettings>
+        <BuiltInScriptSupport>1</BuiltInScriptSupport>
+        <GridSize>25</GridSize>
+        <GridSizeEnforced>0</GridSizeEnforced>
+        <SpacingHorizontal>50</SpacingHorizontal>
+        <SpacingVertical>50</SpacingVertical>
+        <SpacingEnforced>0</SpacingEnforced>
+      </FlowSettings>
+      <JourneySettings>
+        <BackgroundImageMode>FromNode</BackgroundImageMode>
+        <BackgroundImagePositioningMode>Filling</BackgroundImagePositioningMode>
+        <BackgroundColorMode>Custom</BackgroundColorMode>
+        <BackgroundColor>#798F93</BackgroundColor>
+        <BackgroundColorGradientMode>On</BackgroundColorGradientMode>
+        <Duration>10</Duration>
+        <TransitionMode>Animated</TransitionMode>
+      </JourneySettings>
+      <LocationSettings>
+        <ShowDisplayNameForZone>1</ShowDisplayNameForZone>
+        <DropShadowForZone>1</DropShadowForZone>
+        <DisplayNameSizeForZone>11</DisplayNameSizeForZone>
+        <DisplayNameColorForZone>#FFFFFF</DisplayNameColorForZone>
+        <ShowDisplayNameForPath>1</ShowDisplayNameForPath>
+        <DropShadowForPath>1</DropShadowForPath>
+        <DisplayNameSizeForPath>11</DisplayNameSizeForPath>
+        <DisplayNameColorForPath>#FFFFFF</DisplayNameColorForPath>
+        <ShowDisplayNameForImage>0</ShowDisplayNameForImage>
+        <DropShadowForImage>1</DropShadowForImage>
+        <DisplayNameSizeForImage>11</DisplayNameSizeForImage>
+        <DisplayNameColorForImage>#FFFFFF</DisplayNameColorForImage>
+        <ShowDisplayNameForSpot>1</ShowDisplayNameForSpot>
+        <DropShadowForSpot>1</DropShadowForSpot>
+        <DisplayNameColorForSpot>#FFFFFF</DisplayNameColorForSpot>
+        <SpotStyleKind>Flag</SpotStyleKind>
+        <SpotStyleSize>Large</SpotStyleSize>
+        <ShowDisplayNameForLink>1</ShowDisplayNameForLink>
+        <DropShadowForLink>1</DropShadowForLink>
+        <DisplayNameColorForLink>#FFFFFF</DisplayNameColorForLink>
+        <LinkStyleKind>PreviewImage</LinkStyleKind>
+        <LinkStyleSize>Large</LinkStyleSize>
+        <DropShadowForText>1</DropShadowForText>
+      </LocationSettings>
+      <ExternalApplications/>
+    </ProjectSettings>
+    <Assets Id="0x030000004C3DAF54">
+      <DisplayName>Assets</DisplayName>
+      <Color>#C8E2E7</Color>
+    </Assets>
+    <AssetsUserFolder Id="0x0100000000000105">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Images</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Ufo_4F15BFB0</TechnicalName>
+      <ExternalId/>
+      <ShortId>0x4F15BFB0</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928197</Url>
+    </AssetsUserFolder>
+    <AssetsUserFolder Id="0x0100000000000107">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Videos</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Ufo_C16C9BAA</TechnicalName>
+      <ExternalId/>
+      <ShortId>0xC16C9BAA</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928199</Url>
+    </AssetsUserFolder>
+    <AssetsUserFolder Id="0x0100000000000109">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Audio</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Ufo_ABF7036E</TechnicalName>
+      <ExternalId/>
+      <ShortId>0xABF7036E</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928201</Url>
+    </AssetsUserFolder>
+    <AssetsUserFolder Id="0x010000000000010B">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Documents</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Ufo_314B907C</TechnicalName>
+      <ExternalId/>
+      <ShortId>0x314B907C</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928203</Url>
+    </AssetsUserFolder>
+    <AssetsUserFolder Id="0x010000000000010D">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Miscellaneous</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Ufo_B944A6AD</TechnicalName>
+      <ExternalId/>
+      <ShortId>0xB944A6AD</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928205</Url>
+    </AssetsUserFolder>
+    <BooleanPropertyDefinition Id="0x0100000000000187" BasedOn="0x030000000759BA31">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Is Player</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>IsPlayer</TechnicalName>
+      <DefaultValue>0</DefaultValue>
+    </BooleanPropertyDefinition>
+    <BooleanPropertyDefinition Id="0x0100000000000191" BasedOn="0x030000000759BA31">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Is NPC</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>IsNPC</TechnicalName>
+    </BooleanPropertyDefinition>
+    <Documents Id="0x03000000103AA2F0">
+      <DisplayName>Documents</DisplayName>
+      <Color>#C8E2E7</Color>
+    </Documents>
+    <Entities Id="0x03000000AC61A2B3">
+      <DisplayName>Entities</DisplayName>
+      <Color>#C8E2E7</Color>
+    </Entities>
+    <Features Id="0x03000000D2404DC0">
+      <DisplayName>Features</DisplayName>
+      <Color>#C8E2E7</Color>
+    </Features>
+    <Flow Id="0x0300000043CE43F7">
+      <DisplayName>Flow</DisplayName>
+      <Color>#C8E2E7</Color>
+    </Flow>
+    <GlobalVariables Id="0x030000002B4F4C54">
+      <DisplayName>Global Variables</DisplayName>
+      <Color>#C8E2E7</Color>
+    </GlobalVariables>
+    <Journeys Id="0x03000000236F7272">
+      <DisplayName>Journeys</DisplayName>
+      <Color>#C8E2E7</Color>
+    </Journeys>
+    <Locations Id="0x030000003140D3AC">
+      <DisplayName>Locations</DisplayName>
+      <Color>#C8E2E7</Color>
+    </Locations>
+    <ObjectTemplates Id="0x0300000029CF057C">
+      <DisplayName>Template Design</DisplayName>
+      <Color>#C8E2E7</Color>
+    </ObjectTemplates>
+    <ObjectTemplates Id="0x030000009AF68DCD">
+      <DisplayName>Templates</DisplayName>
+      <Color>#C8E2E7</Color>
+    </ObjectTemplates>
+    <PropertyTemplates Id="0x030000002C0951AE">
+      <DisplayName>Property Definitions</DisplayName>
+      <Color>#C8E2E7</Color>
+    </PropertyTemplates>
+    <TypedObjectTemplates Id="0x0300000078B45A71">
+      <DisplayName>Entities</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x030000006D1BC275">
+      <DisplayName>Flow Fragments</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x03000000030B5ACF">
+      <DisplayName>Dialogue Fragments</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x030000008DD5C0F2">
+      <DisplayName>Dialogues</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x0300000092CF598E">
+      <DisplayName>Locations</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x0300000030635118">
+      <DisplayName>Assets</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x03000000A715C057">
+      <DisplayName>Zones</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x030000005314E813">
+      <DisplayName>Paths</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x030000004264B29C">
+      <DisplayName>Spots</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x03000000FB371D5C">
+      <DisplayName>Links</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x0300000013DF3A1A">
+      <DisplayName>Hubs</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x03000000ADA9FA17">
+      <DisplayName>Jumps</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x03000000ECC00F83">
+      <DisplayName>Documents</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x03000000F514339C">
+      <DisplayName>Texts</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x0300000096812FC1">
+      <DisplayName>Texts (in locations)</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x03000000CC5A07F0">
+      <DisplayName>Images (in locations)</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x03000000DCC67F9D">
+      <DisplayName>Conditions</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedObjectTemplates Id="0x03000000BA022E2F">
+      <DisplayName>Instructions</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedObjectTemplates>
+    <TypedPropertyTemplates Id="0x030000006E2C178B">
+      <DisplayName>Numbers</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedPropertyTemplates>
+    <TypedPropertyTemplates Id="0x03000000BB12F1B8">
+      <DisplayName>Booleans</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedPropertyTemplates>
+    <TypedPropertyTemplates Id="0x030000006F82D78E">
+      <DisplayName>Texts</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedPropertyTemplates>
+    <TypedPropertyTemplates Id="0x0300000037DCE3F0">
+      <DisplayName>Drop-down lists</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedPropertyTemplates>
+    <TypedPropertyTemplates Id="0x030000003630A240">
+      <DisplayName><![CDATA[Slots & Strips]]></DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedPropertyTemplates>
+    <TypedPropertyTemplates Id="0x03000000D745C449">
+      <DisplayName>Scripts</DisplayName>
+      <Color>#C8E2E7</Color>
+    </TypedPropertyTemplates>
+    <Connection Id="0x010000000000012F">
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Con_FF7E372D</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928239</Url>
+      <Label Count="0"/>
+      <Source IdRef="0x0100000000000115" PinRef="0x0100000000000118"/>
+      <Target IdRef="0x0100000000000129" PinRef="0x010000000000012B"/>
+      <ShowLabel>0</ShowLabel>
+    </Connection>
+    <Connection Id="0x0100000000000130">
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Con_F2EB847A</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928240</Url>
+      <Label Count="0"/>
+      <Source IdRef="0x0100000000000129" PinRef="0x010000000000012C"/>
+      <Target IdRef="0x0100000000000124" PinRef="0x0100000000000127"/>
+      <ShowLabel>0</ShowLabel>
+    </Connection>
+    <Connection Id="0x0100000000000137">
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Con_83392663</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928247</Url>
+      <Label Count="0"/>
+      <Source IdRef="0x0100000000000129" PinRef="0x010000000000012C"/>
+      <Target IdRef="0x0100000000000131" PinRef="0x0100000000000134"/>
+      <ShowLabel>0</ShowLabel>
+    </Connection>
+    <Connection Id="0x010000000000013D">
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Con_FF84EE54</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928253</Url>
+      <Label Count="0"/>
+      <Source IdRef="0x0100000000000129" PinRef="0x010000000000012C"/>
+      <Target IdRef="0x0100000000000138" PinRef="0x010000000000013B"/>
+      <ShowLabel>0</ShowLabel>
+    </Connection>
+    <Connection Id="0x01000000000001F3">
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Con_9D6DEEB4</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928435</Url>
+      <Label Count="0"/>
+      <Source IdRef="0x0100000000000124" PinRef="0x0100000000000128"/>
+      <Target IdRef="0x01000000000001EE" PinRef="0x01000000000001F1"/>
+      <ShowLabel>0</ShowLabel>
+    </Connection>
+    <Connection Id="0x01000000000001F4">
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Con_C9772CAE</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928436</Url>
+      <Label Count="0"/>
+      <Source IdRef="0x0100000000000131" PinRef="0x0100000000000135"/>
+      <Target IdRef="0x01000000000001EE" PinRef="0x01000000000001F1"/>
+      <ShowLabel>0</ShowLabel>
+    </Connection>
+    <Connection Id="0x01000000000001F5">
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Con_5D015668</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928437</Url>
+      <Label Count="0"/>
+      <Source IdRef="0x0100000000000138" PinRef="0x010000000000013C"/>
+      <Target IdRef="0x01000000000001EE" PinRef="0x01000000000001F1"/>
+      <ShowLabel>0</ShowLabel>
+    </Connection>
+    <Connection Id="0x010000000000020F">
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Con_F0EFEC90</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928463</Url>
+      <Label Count="0"/>
+      <Source IdRef="0x01000000000001EE" PinRef="0x01000000000001F2"/>
+      <Target IdRef="0x0100000000000115" PinRef="0x0100000000000119"/>
+      <ShowLabel>0</ShowLabel>
+    </Connection>
+    <Connection Id="0x010000000000017D">
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Con_4D6BDB8D</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928317</Url>
+      <Label Count="0"/>
+      <Source IdRef="0x0100000000000169" PinRef="0x010000000000016C"/>
+      <Target IdRef="0x0100000000000177" PinRef="0x010000000000017A"/>
+      <ShowLabel>0</ShowLabel>
+    </Connection>
+    <Connection Id="0x01000000000001FF">
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Con_70915418</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928447</Url>
+      <Label Count="0"/>
+      <Source IdRef="0x0100000000000177" PinRef="0x010000000000017B"/>
+      <Target IdRef="0x01000000000001FA" PinRef="0x01000000000001FD"/>
+      <ShowLabel>0</ShowLabel>
+    </Connection>
+    <Connection Id="0x0100000000000205">
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Con_BAF10D6C</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928453</Url>
+      <Label Count="0"/>
+      <Source IdRef="0x01000000000001FA" PinRef="0x01000000000001FE"/>
+      <Target IdRef="0x0100000000000200" PinRef="0x0100000000000203"/>
+      <ShowLabel>0</ShowLabel>
+    </Connection>
+    <Connection Id="0x0100000000000206">
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Con_0CE5D058</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928454</Url>
+      <Label Count="0"/>
+      <Source IdRef="0x0100000000000200" PinRef="0x0100000000000204"/>
+      <Target IdRef="0x0100000000000169" PinRef="0x010000000000016D"/>
+      <ShowLabel>0</ShowLabel>
+    </Connection>
+    <Connection Id="0x0100000000000170">
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Con_D159BC2A</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928304</Url>
+      <Label Count="0"/>
+      <Source IdRef="0x0100000000000169" PinRef="0x010000000000016D"/>
+      <Target IdRef="0x010000000000011B" PinRef="0x010000000000011F"/>
+      <ShowLabel>0</ShowLabel>
+    </Connection>
+    <Connection Id="0x01000000000001F9">
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Con_E07BBD50</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928441</Url>
+      <Label Count="0"/>
+      <Source IdRef="0x010000000000011B" PinRef="0x010000000000011E"/>
+      <Target IdRef="0x0100000000000169" PinRef="0x010000000000016C"/>
+      <ShowLabel>0</ShowLabel>
+    </Connection>
+    <Connection Id="0x0100000000000121">
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Con_EC244AF7</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928225</Url>
+      <Label Count="0"/>
+      <Source IdRef="0x0100000000000115" PinRef="0x0100000000000119"/>
+      <Target IdRef="0x010000000000011B" PinRef="0x010000000000011E"/>
+      <ShowLabel>0</ShowLabel>
+    </Connection>
+    <Dialogue Id="0x0100000000000115">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Test Conversation 1</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Dlg_2C11DB27</TechnicalName>
+      <ExternalId/>
+      <ShortId>0x2C11DB27</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928213</Url>
+      <Features Count="0"/>
+      <References Count="2">
+        <Reference IdRef="0x0100000000000183"/>
+        <Reference IdRef="0x010000000000017F"/>
+      </References>
+      <Pins Count="2">
+        <Pin Id="0x0100000000000118" Index="0" Semantic="Input">
+          <Expression/>
+        </Pin>
+        <Pin Id="0x0100000000000119" Index="0" Semantic="Output">
+          <Expression/>
+        </Pin>
+      </Pins>
+      <Position X="545.5" Y="379.5"/>
+      <Size Width="291" Height="200"/>
+      <ZIndex>0</ZIndex>
+    </Dialogue>
+    <Dialogue Id="0x010000000000011B">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Test Conversation 2</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Dlg_E65D3D5E</TechnicalName>
+      <ExternalId/>
+      <ShortId>0xE65D3D5E</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928219</Url>
+      <Features Count="0"/>
+      <References Count="2">
+        <Reference IdRef="0x0100000000000183"/>
+        <Reference IdRef="0x010000000000017F"/>
+      </References>
+      <Pins Count="2">
+        <Pin Id="0x010000000000011E" Index="0" Semantic="Input">
+          <Expression/>
+        </Pin>
+        <Pin Id="0x010000000000011F" Index="0" Semantic="Output">
+          <Expression/>
+        </Pin>
+      </Pins>
+      <Position X="995.5" Y="379.5"/>
+      <Size Width="291" Height="200"/>
+      <ZIndex>1</ZIndex>
+    </Dialogue>
+    <Dialogue Id="0x0100000000000169">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Test Conversation 2 Dialogue</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Dlg_86D096A6</TechnicalName>
+      <ExternalId/>
+      <ShortId>0x86D096A6</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928297</Url>
+      <Features Count="0"/>
+      <References Count="0"/>
+      <Pins Count="2">
+        <Pin Id="0x010000000000016C" Index="0" Semantic="Input">
+          <Expression/>
+        </Pin>
+        <Pin Id="0x010000000000016D" Index="0" Semantic="Output">
+          <Expression/>
+        </Pin>
+      </Pins>
+      <Position X="1567" Y="500"/>
+      <Size Width="291" Height="200"/>
+      <ZIndex>4</ZIndex>
+    </Dialogue>
+    <DialogueFragment Id="0x0100000000000124">
+      <DisplayName><![CDATA[Player Character: "Conversation option"]]></DisplayName>
+      <Text Count="1" HasMarkup="1">
+        <LocalizedString Lang=""><![CDATA[<html><head><style>#s0 {text-align:left;} #s1 {font-size:11pt;} </style></head><body><p id="s0"><span id="s1">Conversation option</span></p></body></html>]]></LocalizedString>
+      </Text>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>DFr_F242D058</TechnicalName>
+      <ExternalId/>
+      <ShortId>0xF242D058</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928228</Url>
+      <Features Count="0"/>
+      <Pins Count="2">
+        <Pin Id="0x0100000000000127" Index="0" Semantic="Input">
+          <Expression/>
+        </Pin>
+        <Pin Id="0x0100000000000128" Index="0" Semantic="Output">
+          <Expression/>
+        </Pin>
+      </Pins>
+      <Position X="600" Y="250"/>
+      <Size Width="225" Height="200"/>
+      <ZIndex>0</ZIndex>
+      <Speaker IdRef="0x010000000000017F"/>
+      <StageDirections Count="0"/>
+      <MenuText Count="1">
+        <LocalizedString Lang="">Test Conversation 1 Menu 1</LocalizedString>
+      </MenuText>
+    </DialogueFragment>
+    <DialogueFragment Id="0x0100000000000131">
+      <DisplayName><![CDATA[Player Character: "Conversation option"]]></DisplayName>
+      <Text Count="1" HasMarkup="1">
+        <LocalizedString Lang=""><![CDATA[<html><head><style>#s0 {text-align:left;} #s1 {font-size:11pt;} </style></head><body><p id="s0"><span id="s1">Conversation option</span></p></body></html>]]></LocalizedString>
+      </Text>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>DFr_123CEEFB</TechnicalName>
+      <ExternalId/>
+      <ShortId>0x123CEEFB</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928241</Url>
+      <Features Count="0"/>
+      <Pins Count="2">
+        <Pin Id="0x0100000000000134" Index="0" Semantic="Input">
+          <Expression/>
+        </Pin>
+        <Pin Id="0x0100000000000135" Index="0" Semantic="Output">
+          <Expression/>
+        </Pin>
+      </Pins>
+      <Position X="600" Y="450"/>
+      <Size Width="225" Height="200"/>
+      <ZIndex>4</ZIndex>
+      <Speaker IdRef="0x010000000000017F"/>
+      <StageDirections Count="0"/>
+      <MenuText Count="1">
+        <LocalizedString Lang="">Test Convrsation 1 Menu 2</LocalizedString>
+      </MenuText>
+    </DialogueFragment>
+    <DialogueFragment Id="0x0100000000000138">
+      <DisplayName><![CDATA[Player Character: "Test Conversation 1 Menu 3"]]></DisplayName>
+      <Text Count="1" HasMarkup="1">
+        <LocalizedString Lang=""><![CDATA[<html><head><style>#s0 {text-align:left;} #s1 {font-size:11pt;} </style></head><body><p id="s0"><span id="s1">Test Conversation 1 Menu 3</span></p></body></html>]]></LocalizedString>
+      </Text>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>DFr_14379D17</TechnicalName>
+      <ExternalId/>
+      <ShortId>0x14379D17</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928248</Url>
+      <Features Count="0"/>
+      <Pins Count="2">
+        <Pin Id="0x010000000000013B" Index="0" Semantic="Input">
+          <Expression/>
+        </Pin>
+        <Pin Id="0x010000000000013C" Index="0" Semantic="Output">
+          <Expression/>
+        </Pin>
+      </Pins>
+      <Position X="600" Y="650"/>
+      <Size Width="225" Height="200"/>
+      <ZIndex>6</ZIndex>
+      <Speaker IdRef="0x010000000000017F"/>
+      <StageDirections Count="0"/>
+      <MenuText Count="1">
+        <LocalizedString Lang="">Test Conversation 1 Menu 3</LocalizedString>
+      </MenuText>
+    </DialogueFragment>
+    <DialogueFragment Id="0x01000000000001EE">
+      <DisplayName><![CDATA[NPC: "Test successful"]]></DisplayName>
+      <Text Count="1" HasMarkup="1">
+        <LocalizedString Lang=""><![CDATA[<html><head><style>#s0 {text-align:left;} #s1 {font-size:11pt;} </style></head><body><p id="s0"><span id="s1">Test successful</span></p></body></html>]]></LocalizedString>
+      </Text>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>DFr_A51247F3</TechnicalName>
+      <ExternalId/>
+      <ShortId>0xA51247F3</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928430</Url>
+      <Features Count="0"/>
+      <Pins Count="2">
+        <Pin Id="0x01000000000001F1" Index="0" Semantic="Input">
+          <Expression/>
+        </Pin>
+        <Pin Id="0x01000000000001F2" Index="0" Semantic="Output">
+          <Expression/>
+        </Pin>
+      </Pins>
+      <Position X="975" Y="450"/>
+      <Size Width="225" Height="200"/>
+      <ZIndex>10</ZIndex>
+      <Speaker IdRef="0x0100000000000183"/>
+      <StageDirections Count="0"/>
+      <MenuText Count="0"/>
+    </DialogueFragment>
+    <DialogueFragment Id="0x0100000000000177">
+      <DisplayName><![CDATA[Player Character: "Test"]]></DisplayName>
+      <Text Count="1" HasMarkup="1">
+        <LocalizedString Lang=""><![CDATA[<html><head><style>#s0 {text-align:left;} #s1 {font-size:11pt;} </style></head><body><p id="s0"><span id="s1">Test</span></p></body></html>]]></LocalizedString>
+      </Text>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>DFr_30CC7CD1</TechnicalName>
+      <ExternalId/>
+      <ShortId>0x30CC7CD1</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928311</Url>
+      <Features Count="0"/>
+      <Pins Count="2">
+        <Pin Id="0x010000000000017A" Index="0" Semantic="Input">
+          <Expression/>
+        </Pin>
+        <Pin Id="0x010000000000017B" Index="0" Semantic="Output">
+          <Expression/>
+        </Pin>
+      </Pins>
+      <Position X="700" Y="500"/>
+      <Size Width="225" Height="200"/>
+      <ZIndex>0</ZIndex>
+      <Speaker IdRef="0x010000000000017F"/>
+      <StageDirections Count="0"/>
+      <MenuText Count="1">
+        <LocalizedString Lang="">Test Conversation 2</LocalizedString>
+      </MenuText>
+    </DialogueFragment>
+    <DialogueFragment Id="0x01000000000001FA">
+      <DisplayName><![CDATA[NPC: "Test"]]></DisplayName>
+      <Text Count="1" HasMarkup="1">
+        <LocalizedString Lang=""><![CDATA[<html><head><style>#s0 {text-align:left;} #s1 {font-size:11pt;} </style></head><body><p id="s0"><span id="s1">Test</span></p></body></html>]]></LocalizedString>
+      </Text>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>DFr_C9253CB8</TechnicalName>
+      <ExternalId/>
+      <ShortId>0xC9253CB8</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928442</Url>
+      <Features Count="0"/>
+      <Pins Count="2">
+        <Pin Id="0x01000000000001FD" Index="0" Semantic="Input">
+          <Expression/>
+        </Pin>
+        <Pin Id="0x01000000000001FE" Index="0" Semantic="Output">
+          <Expression/>
+        </Pin>
+      </Pins>
+      <Position X="1050" Y="500"/>
+      <Size Width="225" Height="200"/>
+      <ZIndex>2</ZIndex>
+      <Speaker IdRef="0x0100000000000183"/>
+      <StageDirections Count="0"/>
+      <MenuText Count="1">
+        <LocalizedString Lang="">Test1</LocalizedString>
+      </MenuText>
+    </DialogueFragment>
+    <DialogueFragment Id="0x0100000000000200">
+      <DisplayName><![CDATA[Player Character: "Test"]]></DisplayName>
+      <Text Count="1" HasMarkup="1">
+        <LocalizedString Lang=""><![CDATA[<html><head><style>#s0 {text-align:left;} #s1 {font-size:11pt;} </style></head><body><p id="s0"><span id="s1">Test</span></p></body></html>]]></LocalizedString>
+      </Text>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>DFr_E3541607</TechnicalName>
+      <ExternalId/>
+      <ShortId>0xE3541607</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928448</Url>
+      <Features Count="0"/>
+      <Pins Count="2">
+        <Pin Id="0x0100000000000203" Index="0" Semantic="Input">
+          <Expression/>
+        </Pin>
+        <Pin Id="0x0100000000000204" Index="0" Semantic="Output">
+          <Expression/>
+        </Pin>
+      </Pins>
+      <Position X="1375" Y="500"/>
+      <Size Width="225" Height="200"/>
+      <ZIndex>4</ZIndex>
+      <Speaker IdRef="0x010000000000017F"/>
+      <StageDirections Count="0"/>
+      <MenuText Count="1">
+        <LocalizedString Lang="">Test Conversation 2</LocalizedString>
+      </MenuText>
+    </DialogueFragment>
+    <Entity Id="0x010000000000017F" ObjectTemplateReference="0x0100000000000095" ObjectTemplateReferenceName="DefaultMainCharacterTemplate">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Player Character</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Ntt_1F342CE8</TechnicalName>
+      <ExternalId/>
+      <ShortId>0x1F342CE8</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928319</Url>
+      <Features Count="2">
+        <Feature Name="DefaultExtendedCharacterFeature" IdRef="0x0100000000000043">
+          <Properties Count="6">
+            <String Name="Motivation"/>
+            <String Name="InnerConflict"/>
+            <String Name="Skills"/>
+            <String Name="Fears"/>
+            <String Name="Habits"/>
+            <String Name="FurtherDetails"/>
+          </Properties>
+        </Feature>
+        <Feature Name="DefaultBasicCharacterFeature" IdRef="0x0100000000000008">
+          <Properties Count="2">
+            <Boolean Name="IsNPC">0</Boolean>
+            <Boolean Name="IsPlayer">1</Boolean>
+          </Properties>
+        </Feature>
+      </Features>
+      <References Count="0"/>
+    </Entity>
+    <Entity Id="0x0100000000000183" ObjectTemplateReference="0x0100000000000095" ObjectTemplateReferenceName="DefaultMainCharacterTemplate">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">NPC</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Ntt_0AC79FC3</TechnicalName>
+      <ExternalId/>
+      <ShortId>0x0AC79FC3</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928323</Url>
+      <Features Count="2">
+        <Feature Name="DefaultExtendedCharacterFeature" IdRef="0x0100000000000043">
+          <Properties Count="6">
+            <String Name="Motivation"/>
+            <String Name="InnerConflict"/>
+            <String Name="Skills"/>
+            <String Name="Fears"/>
+            <String Name="Habits"/>
+            <String Name="FurtherDetails"/>
+          </Properties>
+        </Feature>
+        <Feature Name="DefaultBasicCharacterFeature" IdRef="0x0100000000000008">
+          <Properties Count="2">
+            <Boolean Name="IsNPC">1</Boolean>
+            <Boolean Name="IsPlayer">0</Boolean>
+          </Properties>
+        </Feature>
+      </Features>
+      <References Count="0"/>
+    </Entity>
+    <FeatureDefinition Id="0x0100000000000008">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Basic Character Properties</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>DefaultBasicCharacterFeature</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037927944</Url>
+      <PropertyDefinitions Count="2">
+        <PropertyDefinitionRef IdRef="0x01000000000001D5"/>
+        <PropertyDefinitionRef IdRef="0x01000000000001DB"/>
+      </PropertyDefinitions>
+    </FeatureDefinition>
+    <FeatureDefinition Id="0x0100000000000043">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Extended Character Properties</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>DefaultExtendedCharacterFeature</TechnicalName>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928003</Url>
+      <PropertyDefinitions Count="6">
+        <PropertyDefinitionRef IdRef="0x0100000000000045"/>
+        <PropertyDefinitionRef IdRef="0x010000000000004B"/>
+        <PropertyDefinitionRef IdRef="0x0100000000000051"/>
+        <PropertyDefinitionRef IdRef="0x0100000000000057"/>
+        <PropertyDefinitionRef IdRef="0x010000000000005D"/>
+        <PropertyDefinitionRef IdRef="0x0100000000000063"/>
+      </PropertyDefinitions>
+    </FeatureDefinition>
+    <Hub Id="0x0100000000000129">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">TestConversation1</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>Hub_C856DCCA</TechnicalName>
+      <ExternalId/>
+      <ShortId>0xC856DCCA</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928233</Url>
+      <Features Count="0"/>
+      <Pins Count="2">
+        <Pin Id="0x010000000000012B" Index="0" Semantic="Input">
+          <Expression/>
+        </Pin>
+        <Pin Id="0x010000000000012C" Index="0" Semantic="Output">
+          <Expression/>
+        </Pin>
+      </Pins>
+      <Position X="300" Y="525"/>
+      <Size Width="175" Height="50"/>
+      <ZIndex>1</ZIndex>
+    </Hub>
+    <ObjectTemplateDefinition Id="0x010000000000006B">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Supporting characters</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>DefaultSupportingCharacterTemplate</TechnicalName>
+      <ExternalId/>
+      <ShortId>0x1033C863</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928043</Url>
+      <FeatureDefinitions Count="1">
+        <FeatureDefinitionRef IdRef="0x0100000000000008"/>
+      </FeatureDefinitions>
+    </ObjectTemplateDefinition>
+    <ObjectTemplateDefinition Id="0x0100000000000095">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Main characters</LocalizedString>
+      </DisplayName>
+      <Color>#C8E2E7</Color>
+      <TechnicalName>DefaultMainCharacterTemplate</TechnicalName>
+      <ExternalId/>
+      <ShortId>0xBED6F0F8</ShortId>
+      <Url>articy://localhost/view/97ab38ac-c20d-49d4-9d92-f52dcbb69933/72057594037928085</Url>
+      <FeatureDefinitions Count="2">
+        <FeatureDefinitionRef IdRef="0x0100000000000008"/>
+        <FeatureDefinitionRef IdRef="0x0100000000000043"/>
+      </FeatureDefinitions>
+    </ObjectTemplateDefinition>
+    <BooleanPropertyDefinition Id="0x030000000759BA31">
+      <IsMandatory>0</IsMandatory>
+    </BooleanPropertyDefinition>
+    <TextPropertyDefinition Id="0x03000000BC9B4687">
+      <IsMandatory>0</IsMandatory>
+      <IsLocalized>0</IsLocalized>
+      <AllowsLinebreaks>1</AllowsLinebreaks>
+    </TextPropertyDefinition>
+    <BooleanPropertyDefinition Id="0x01000000000001D5" BasedOn="0x0100000000000191">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Is NPC</LocalizedString>
+      </DisplayName>
+      <TechnicalName>IsNPC</TechnicalName>
+    </BooleanPropertyDefinition>
+    <BooleanPropertyDefinition Id="0x01000000000001DB" BasedOn="0x0100000000000187">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Is Player</LocalizedString>
+      </DisplayName>
+      <TechnicalName>IsPlayer</TechnicalName>
+    </BooleanPropertyDefinition>
+    <TextPropertyDefinition Id="0x0100000000000045" BasedOn="0x03000000BC9B4687">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Goals</LocalizedString>
+      </DisplayName>
+      <TechnicalName>Motivation</TechnicalName>
+      <IsLocalized>1</IsLocalized>
+    </TextPropertyDefinition>
+    <TextPropertyDefinition Id="0x010000000000004B" BasedOn="0x03000000BC9B4687">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Inner Conflict</LocalizedString>
+      </DisplayName>
+      <TechnicalName>InnerConflict</TechnicalName>
+      <IsLocalized>1</IsLocalized>
+    </TextPropertyDefinition>
+    <TextPropertyDefinition Id="0x0100000000000051" BasedOn="0x03000000BC9B4687">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Skills</LocalizedString>
+      </DisplayName>
+      <TechnicalName>Skills</TechnicalName>
+      <IsLocalized>1</IsLocalized>
+    </TextPropertyDefinition>
+    <TextPropertyDefinition Id="0x0100000000000057" BasedOn="0x03000000BC9B4687">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Weaknesses</LocalizedString>
+      </DisplayName>
+      <TechnicalName>Fears</TechnicalName>
+      <IsLocalized>1</IsLocalized>
+    </TextPropertyDefinition>
+    <TextPropertyDefinition Id="0x010000000000005D" BasedOn="0x03000000BC9B4687">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Quirks / Habits</LocalizedString>
+      </DisplayName>
+      <TechnicalName>Habits</TechnicalName>
+      <IsLocalized>1</IsLocalized>
+    </TextPropertyDefinition>
+    <TextPropertyDefinition Id="0x0100000000000063" BasedOn="0x03000000BC9B4687">
+      <DisplayName Count="1">
+        <LocalizedString Lang="">Further Details</LocalizedString>
+      </DisplayName>
+      <TechnicalName>FurtherDetails</TechnicalName>
+      <IsLocalized>1</IsLocalized>
+    </TextPropertyDefinition>
+  </Content>
+  <Hierarchy>
+    <Node IdRef="0x0100000000000001" Type="Project">
+      <Node IdRef="0x0300000043CE43F7" Type="Flow">
+        <Node IdRef="0x0100000000000115" Type="Dialogue">
+          <Node IdRef="0x0100000000000124" Type="DialogueFragment"/>
+          <Node IdRef="0x0100000000000129" Type="Hub"/>
+          <Node IdRef="0x010000000000012F" Type="Connection"/>
+          <Node IdRef="0x0100000000000130" Type="Connection"/>
+          <Node IdRef="0x0100000000000131" Type="DialogueFragment"/>
+          <Node IdRef="0x0100000000000137" Type="Connection"/>
+          <Node IdRef="0x0100000000000138" Type="DialogueFragment"/>
+          <Node IdRef="0x010000000000013D" Type="Connection"/>
+          <Node IdRef="0x01000000000001EE" Type="DialogueFragment"/>
+          <Node IdRef="0x01000000000001F3" Type="Connection"/>
+          <Node IdRef="0x01000000000001F4" Type="Connection"/>
+          <Node IdRef="0x01000000000001F5" Type="Connection"/>
+          <Node IdRef="0x010000000000020F" Type="Connection"/>
+        </Node>
+        <Node IdRef="0x010000000000011B" Type="Dialogue">
+          <Node IdRef="0x0100000000000169" Type="Dialogue">
+            <Node IdRef="0x0100000000000177" Type="DialogueFragment"/>
+            <Node IdRef="0x010000000000017D" Type="Connection"/>
+            <Node IdRef="0x01000000000001FA" Type="DialogueFragment"/>
+            <Node IdRef="0x01000000000001FF" Type="Connection"/>
+            <Node IdRef="0x0100000000000200" Type="DialogueFragment"/>
+            <Node IdRef="0x0100000000000205" Type="Connection"/>
+            <Node IdRef="0x0100000000000206" Type="Connection"/>
+          </Node>
+          <Node IdRef="0x0100000000000170" Type="Connection"/>
+          <Node IdRef="0x01000000000001F9" Type="Connection"/>
+        </Node>
+        <Node IdRef="0x0100000000000121" Type="Connection"/>
+      </Node>
+      <Node IdRef="0x030000003140D3AC" Type="Locations"/>
+      <Node IdRef="0x03000000AC61A2B3" Type="Entities">
+        <Node IdRef="0x010000000000017F" Type="Entity"/>
+        <Node IdRef="0x0100000000000183" Type="Entity"/>
+      </Node>
+      <Node IdRef="0x030000004C3DAF54" Type="Assets">
+        <Node IdRef="0x0100000000000105" Type="AssetsUserFolder"/>
+        <Node IdRef="0x0100000000000107" Type="AssetsUserFolder"/>
+        <Node IdRef="0x0100000000000109" Type="AssetsUserFolder"/>
+        <Node IdRef="0x010000000000010B" Type="AssetsUserFolder"/>
+        <Node IdRef="0x010000000000010D" Type="AssetsUserFolder"/>
+      </Node>
+      <Node IdRef="0x0300000029CF057C" Type="ObjectTemplates">
+        <Node IdRef="0x03000000D2404DC0" Type="Features">
+          <Node IdRef="0x0100000000000008" Type="FeatureDefinition"/>
+          <Node IdRef="0x0100000000000043" Type="FeatureDefinition"/>
+        </Node>
+        <Node IdRef="0x030000009AF68DCD" Type="ObjectTemplates">
+          <Node IdRef="0x0300000078B45A71" Type="TypedObjectTemplates">
+            <Node IdRef="0x010000000000006B" Type="ObjectTemplateDefinition"/>
+            <Node IdRef="0x0100000000000095" Type="ObjectTemplateDefinition"/>
+          </Node>
+          <Node IdRef="0x030000006D1BC275" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x03000000030B5ACF" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x030000008DD5C0F2" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x0300000092CF598E" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x0300000030635118" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x03000000A715C057" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x030000005314E813" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x030000004264B29C" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x03000000FB371D5C" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x0300000013DF3A1A" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x03000000ADA9FA17" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x03000000ECC00F83" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x03000000F514339C" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x0300000096812FC1" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x03000000CC5A07F0" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x03000000DCC67F9D" Type="TypedObjectTemplates"/>
+          <Node IdRef="0x03000000BA022E2F" Type="TypedObjectTemplates"/>
+        </Node>
+        <Node IdRef="0x030000002C0951AE" Type="PropertyTemplates">
+          <Node IdRef="0x030000006E2C178B" Type="TypedPropertyTemplates"/>
+          <Node IdRef="0x03000000BB12F1B8" Type="TypedPropertyTemplates">
+            <Node IdRef="0x0100000000000187" Type="BooleanPropertyTemplate"/>
+            <Node IdRef="0x0100000000000191" Type="BooleanPropertyTemplate"/>
+          </Node>
+          <Node IdRef="0x030000006F82D78E" Type="TypedPropertyTemplates"/>
+          <Node IdRef="0x0300000037DCE3F0" Type="TypedPropertyTemplates"/>
+          <Node IdRef="0x030000003630A240" Type="TypedPropertyTemplates"/>
+          <Node IdRef="0x03000000D745C449" Type="TypedPropertyTemplates"/>
+        </Node>
+      </Node>
+      <Node IdRef="0x030000002B4F4C54" Type="GlobalVariables"/>
+      <Node IdRef="0x03000000103AA2F0" Type="Documents"/>
+      <Node IdRef="0x03000000236F7272" Type="Journeys"/>
+      <Node IdRef="0x03000000F917511B" Type="ProjectSettings"/>
+    </Node>
+  </Hierarchy>
+</Export>
