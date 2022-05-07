@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 935899b62f48ae5498594680ed17d133, type: 3}
   m_Name: VerticalSlice
   m_EditorClassIdentifier: 
-  version: 29/04/2022 12:48:30 AM
+  version: 7/05/2022 3:24:52 AM
   author: articy:draft 3.1.33
   description: 
   globalUserScript: 
@@ -201,6 +201,46 @@ MonoBehaviour:
       value: Ntt_72F00748
       type: 0
       typeString: 
+    - title: talent_charm
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: talent_combat
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: talent_leadership
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: talent_scholarship
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: talent_seduction
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: talent_stealth
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: talent_strategy
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: IsNPC
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Romanced
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Platonic
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
     portrait: {fileID: 0}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -1135,6 +1175,48 @@ MonoBehaviour:
   - id: 67
     fields:
     - title: Name
+      value: RelationshipAssassin.Teased
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 68
+    fields:
+    - title: Name
+      value: RelationshipAssassin.NightBefore
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 69
+    fields:
+    - title: Name
+      value: RelationshipAssassin.NewVariable_01
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 70
+    fields:
+    - title: Name
       value: RelationshipScorned.Idealist
       type: 0
       typeString: 
@@ -1146,7 +1228,7 @@ MonoBehaviour:
       value: Saviran's Idealist score with the Scorned
       type: 0
       typeString: 
-  - id: 68
+  - id: 71
     fields:
     - title: Name
       value: RelationshipScorned.Ruthless
@@ -1160,7 +1242,7 @@ MonoBehaviour:
       value: Saviran's Ruthless score with the Scorned
       type: 0
       typeString: 
-  - id: 69
+  - id: 72
     fields:
     - title: Name
       value: RelationshipScorned.Noble
@@ -1174,7 +1256,7 @@ MonoBehaviour:
       value: Saviran's Noble score in this relationship
       type: 0
       typeString: 
-  - id: 70
+  - id: 73
     fields:
     - title: Name
       value: RelationshipScorned.Platonic
@@ -1188,7 +1270,7 @@ MonoBehaviour:
       value: Saviran has requested the relationship be platonic
       type: 0
       typeString: 
-  - id: 71
+  - id: 74
     fields:
     - title: Name
       value: RelationshipScorned.Intimate
@@ -1202,7 +1284,7 @@ MonoBehaviour:
       value: Saviran has been intimate with the Scorned
       type: 0
       typeString: 
-  - id: 72
+  - id: 75
     fields:
     - title: Name
       value: RelationshipScorned.Flirtation
@@ -1216,7 +1298,7 @@ MonoBehaviour:
       value: Saviran has started flirting with the Scorned
       type: 0
       typeString: 
-  - id: 73
+  - id: 76
     fields:
     - title: Name
       value: RelationshipScorned.Affinity
@@ -1230,7 +1312,7 @@ MonoBehaviour:
       value: Saviran's affinity score with the Scorned
       type: 0
       typeString: 
-  - id: 74
+  - id: 77
     fields:
     - title: Name
       value: RelationshipScorned.LongTime
@@ -1244,7 +1326,7 @@ MonoBehaviour:
       value: Narrative beat
       type: 0
       typeString: 
-  - id: 75
+  - id: 78
     fields:
     - title: Name
       value: RelationshipScorned.Kiss
@@ -1258,7 +1340,7 @@ MonoBehaviour:
       value: Saviran and the Scorned have kissed
       type: 0
       typeString: 
-  - id: 76
+  - id: 79
     fields:
     - title: Name
       value: RelationshipScorned.Confessed
@@ -1272,7 +1354,21 @@ MonoBehaviour:
       value: Saviran has confessed their feeligns to the Scorned
       type: 0
       typeString: 
-  - id: 77
+  - id: 80
+    fields:
+    - title: Name
+      value: RelationshipScorned.NightBefore
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 81
     fields:
     - title: Name
       value: RelationshipMercenary.Flirtation
@@ -1286,7 +1382,7 @@ MonoBehaviour:
       value: Saviran has flirted with the Mercenary
       type: 0
       typeString: 
-  - id: 78
+  - id: 82
     fields:
     - title: Name
       value: RelationshipMercenary.Intimate
@@ -1300,7 +1396,7 @@ MonoBehaviour:
       value: Saviran has been intimate with the Mercenary
       type: 0
       typeString: 
-  - id: 79
+  - id: 83
     fields:
     - title: Name
       value: RelationshipMercenary.Platonic
@@ -1314,7 +1410,7 @@ MonoBehaviour:
       value: Saviran has requested the relationship be platonic
       type: 0
       typeString: 
-  - id: 80
+  - id: 84
     fields:
     - title: Name
       value: RelationshipMercenary.Noble
@@ -1328,7 +1424,7 @@ MonoBehaviour:
       value: Saviran's Noble score with the Mercenary
       type: 0
       typeString: 
-  - id: 81
+  - id: 85
     fields:
     - title: Name
       value: RelationshipMercenary.Ruthless
@@ -1342,7 +1438,7 @@ MonoBehaviour:
       value: Saviran's Ruthless score with the Mercenary
       type: 0
       typeString: 
-  - id: 82
+  - id: 86
     fields:
     - title: Name
       value: RelationshipMercenary.Idealist
@@ -1356,7 +1452,7 @@ MonoBehaviour:
       value: Saviran's Idealist score with the Mercenary
       type: 0
       typeString: 
-  - id: 83
+  - id: 87
     fields:
     - title: Name
       value: RelationshipMercenary.Affinity
@@ -1370,7 +1466,7 @@ MonoBehaviour:
       value: Saviran's affinity score with this character.
       type: 0
       typeString: 
-  - id: 84
+  - id: 88
     fields:
     - title: Name
       value: RelationshipMercenary.EverythingisManipulation
@@ -1384,7 +1480,7 @@ MonoBehaviour:
       value: Saviran has mentioned everything is manipulation.
       type: 0
       typeString: 
-  - id: 85
+  - id: 89
     fields:
     - title: Name
       value: RelationshipMercenary.Honest
@@ -1398,7 +1494,7 @@ MonoBehaviour:
       value: Saviran has asked for honesty
       type: 0
       typeString: 
-  - id: 86
+  - id: 90
     fields:
     - title: Name
       value: RelationshipMercenary.Kiss
@@ -1412,7 +1508,7 @@ MonoBehaviour:
       value: Saviran and the Mercenary have shared their first kiss
       type: 0
       typeString: 
-  - id: 87
+  - id: 91
     fields:
     - title: Name
       value: RelationshipMercenary.Seduction
@@ -1426,7 +1522,21 @@ MonoBehaviour:
       value: Saviran has asked for a seduction
       type: 0
       typeString: 
-  - id: 88
+  - id: 92
+    fields:
+    - title: Name
+      value: RelationshipMercenary.NightBefore
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 93
     fields:
     - title: Name
       value: RelationshipAdvisor.Flirtation
@@ -1440,7 +1550,7 @@ MonoBehaviour:
       value: Saviran and the Advisor have flirted
       type: 0
       typeString: 
-  - id: 89
+  - id: 94
     fields:
     - title: Name
       value: RelationshipAdvisor.Intimate
@@ -1454,7 +1564,7 @@ MonoBehaviour:
       value: Saviran and the Advisor have become intimate
       type: 0
       typeString: 
-  - id: 90
+  - id: 95
     fields:
     - title: Name
       value: RelationshipAdvisor.Platonic
@@ -1468,7 +1578,7 @@ MonoBehaviour:
       value: Saviran has asked for the relationship to be platonic
       type: 0
       typeString: 
-  - id: 91
+  - id: 96
     fields:
     - title: Name
       value: RelationshipAdvisor.Noble
@@ -1482,7 +1592,7 @@ MonoBehaviour:
       value: Saviran's Noble score with the Advisor
       type: 0
       typeString: 
-  - id: 92
+  - id: 97
     fields:
     - title: Name
       value: RelationshipAdvisor.Ruthless
@@ -1496,7 +1606,7 @@ MonoBehaviour:
       value: Saviran's Ruthless score with the Advisor
       type: 0
       typeString: 
-  - id: 93
+  - id: 98
     fields:
     - title: Name
       value: RelationshipAdvisor.Idealist
@@ -1510,7 +1620,7 @@ MonoBehaviour:
       value: Saviran's Idealist score with the Advisor
       type: 0
       typeString: 
-  - id: 94
+  - id: 99
     fields:
     - title: Name
       value: RelationshipAdvisor.Affinity
@@ -1524,7 +1634,7 @@ MonoBehaviour:
       value: Saviran's affinity score with the Advisor
       type: 0
       typeString: 
-  - id: 95
+  - id: 100
     fields:
     - title: Name
       value: RelationshipAdvisor.Kiss
@@ -1538,7 +1648,7 @@ MonoBehaviour:
       value: Saviran and the Advisor have kissed
       type: 0
       typeString: 
-  - id: 96
+  - id: 101
     fields:
     - title: Name
       value: RelationshipAdvisor.Confessed
@@ -1552,7 +1662,7 @@ MonoBehaviour:
       value: Saviran has confessed their feelings to the Advisor
       type: 0
       typeString: 
-  - id: 97
+  - id: 102
     fields:
     - title: Name
       value: RelationshipAdvisor.ConfessedTo
@@ -1566,7 +1676,7 @@ MonoBehaviour:
       value: The Advisor has confessed her feelings for Saviran
       type: 0
       typeString: 
-  - id: 98
+  - id: 103
     fields:
     - title: Name
       value: RelationshipAdvisor.Casual
@@ -1580,7 +1690,7 @@ MonoBehaviour:
       value: Saviran has asked for the relationship to be casual
       type: 0
       typeString: 
-  - id: 99
+  - id: 104
     fields:
     - title: Name
       value: RelationshipAdvisor.RemainFriends
@@ -1594,7 +1704,7 @@ MonoBehaviour:
       value: Saviran and the Advisor have decided to break it off
       type: 0
       typeString: 
-  - id: 100
+  - id: 105
     fields:
     - title: Name
       value: RelationshipMistress.Affinity
@@ -1608,7 +1718,7 @@ MonoBehaviour:
       value: Saviran's affinity score with the Mistress
       type: 0
       typeString: 
-  - id: 101
+  - id: 106
     fields:
     - title: Name
       value: RelationshipMistress.Platonic
@@ -1622,7 +1732,7 @@ MonoBehaviour:
       value: Saviran has asked for the relationship to be non-sexual
       type: 0
       typeString: 
-  - id: 102
+  - id: 107
     fields:
     - title: Name
       value: RelationshipMistress.Flirtation
@@ -1636,7 +1746,7 @@ MonoBehaviour:
       value: Saviran has flirted with the Mistress
       type: 0
       typeString: 
-  - id: 103
+  - id: 108
     fields:
     - title: Name
       value: RelationshipMistress.Noble
@@ -1650,7 +1760,7 @@ MonoBehaviour:
       value: Saviran's Noble score with the Mistress
       type: 0
       typeString: 
-  - id: 104
+  - id: 109
     fields:
     - title: Name
       value: RelationshipMistress.Ruthless
@@ -1664,7 +1774,7 @@ MonoBehaviour:
       value: Saviran's Ruthless score with the Mistress
       type: 0
       typeString: 
-  - id: 105
+  - id: 110
     fields:
     - title: Name
       value: RelationshipMistress.Idealist
@@ -1678,7 +1788,7 @@ MonoBehaviour:
       value: Saviran's Idealist score with the Mistress
       type: 0
       typeString: 
-  - id: 106
+  - id: 111
     fields:
     - title: Name
       value: RelationshipMistress.Intimate
@@ -1692,7 +1802,7 @@ MonoBehaviour:
       value: Saviran has been intimate with the Mistress
       type: 0
       typeString: 
-  - id: 107
+  - id: 112
     fields:
     - title: Name
       value: RelationshipMistress.Submit
@@ -1706,7 +1816,7 @@ MonoBehaviour:
       value: Saviran has agreed to submit to the Mistress
       type: 0
       typeString: 
-  - id: 108
+  - id: 113
     fields:
     - title: Name
       value: RelationshipMistress.Confession
@@ -1720,7 +1830,7 @@ MonoBehaviour:
       value: Saviran has confessed their love for the Mistress
       type: 0
       typeString: 
-  - id: 109
+  - id: 114
     fields:
     - title: Name
       value: RelationshipMistress.Casual
@@ -1734,7 +1844,7 @@ MonoBehaviour:
       value: Saviran has agreed to a casual relationship with the Mistress
       type: 0
       typeString: 
-  - id: 110
+  - id: 115
     fields:
     - title: Name
       value: ConvAdvisor.SpeakToEveryone
@@ -1748,7 +1858,7 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
-  - id: 111
+  - id: 116
     fields:
     - title: Name
       value: Backstory.Healer
@@ -1762,7 +1872,7 @@ MonoBehaviour:
       value: Saviran has noted that they have healing magic
       type: 0
       typeString: 
-  - id: 112
+  - id: 117
     fields:
     - title: Name
       value: Backstory.FriendHealer
@@ -1776,7 +1886,7 @@ MonoBehaviour:
       value: Saviran has noted their friend is a healer
       type: 0
       typeString: 
-  - id: 113
+  - id: 118
     fields:
     - title: Name
       value: RelationshipFriend.Noble
@@ -1790,7 +1900,7 @@ MonoBehaviour:
       value: Saviran's Noble score in this relationship
       type: 0
       typeString: 
-  - id: 114
+  - id: 119
     fields:
     - title: Name
       value: RelationshipFriend.Idealist
@@ -1804,7 +1914,7 @@ MonoBehaviour:
       value: Saviran's Idealist score in this relationship
       type: 0
       typeString: 
-  - id: 115
+  - id: 120
     fields:
     - title: Name
       value: RelationshipFriend.Ruthless
@@ -1818,7 +1928,7 @@ MonoBehaviour:
       value: Saviran's Ruthless score in this relationship
       type: 0
       typeString: 
-  - id: 116
+  - id: 121
     fields:
     - title: Name
       value: ConvFriend.AskedToLead
@@ -1832,7 +1942,7 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
-  - id: 117
+  - id: 122
     fields:
     - title: Name
       value: ConvFriend.Hug
@@ -1846,7 +1956,7 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
-  - id: 118
+  - id: 123
     fields:
     - title: Name
       value: DS_Settings.EM1_Underline
@@ -1860,7 +1970,7 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
-  - id: 119
+  - id: 124
     fields:
     - title: Name
       value: DS_Settings.EM1_Italic
@@ -1874,7 +1984,7 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
-  - id: 120
+  - id: 125
     fields:
     - title: Name
       value: DS_Settings.EM1_Bold
@@ -1888,7 +1998,7 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
-  - id: 121
+  - id: 126
     fields:
     - title: Name
       value: DS_Settings.EM1_Color
@@ -1902,7 +2012,7 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
-  - id: 122
+  - id: 127
     fields:
     - title: Name
       value: NarrativeEvent.NewVariable
@@ -1916,7 +2026,7 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
-  - id: 123
+  - id: 128
     fields:
     - title: Name
       value: Epilogue.NewVariable
@@ -1930,7 +2040,7 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
-  - id: 124
+  - id: 129
     fields:
     - title: Name
       value: RelationshipHeir.Idealist
@@ -1944,7 +2054,7 @@ MonoBehaviour:
       value: Saviran's Idealist score with the Heir
       type: 0
       typeString: 
-  - id: 125
+  - id: 130
     fields:
     - title: Name
       value: RelationshipHeir.Noble
@@ -1958,7 +2068,7 @@ MonoBehaviour:
       value: Saviran's Noble score with the Heir
       type: 0
       typeString: 
-  - id: 126
+  - id: 131
     fields:
     - title: Name
       value: RelationshipHeir.Ruthless
@@ -1972,7 +2082,7 @@ MonoBehaviour:
       value: Saviran's Ruthless score with the Heir
       type: 0
       typeString: 
-  - id: 127
+  - id: 132
     fields:
     - title: Name
       value: RelationshipHeir.Affinity
@@ -1986,7 +2096,7 @@ MonoBehaviour:
       value: Saviran's Affinity score with the Heir
       type: 0
       typeString: 
-  - id: 128
+  - id: 133
     fields:
     - title: Name
       value: RelationshipHeir.Platonic
@@ -2000,7 +2110,7 @@ MonoBehaviour:
       value: Saviran has asked for a platonic relationship with the Heir
       type: 0
       typeString: 
-  - id: 129
+  - id: 134
     fields:
     - title: Name
       value: RelationshipHeir.Romantic
@@ -2014,7 +2124,7 @@ MonoBehaviour:
       value: Saviran has engaged in a romantic relationshipw with the Heir
       type: 0
       typeString: 
-  - id: 130
+  - id: 135
     fields:
     - title: Name
       value: RelationshipHeir.Intimate
@@ -2028,7 +2138,7 @@ MonoBehaviour:
       value: Saviran has been intimate with the Heir
       type: 0
       typeString: 
-  - id: 131
+  - id: 136
     fields:
     - title: Name
       value: RelationshipHeir.Convession
@@ -2042,7 +2152,7 @@ MonoBehaviour:
       value: Saviran has confessed their love for the Heir
       type: 0
       typeString: 
-  - id: 132
+  - id: 137
     fields:
     - title: Name
       value: RelationshipHeir.Casual
@@ -2056,7 +2166,7 @@ MonoBehaviour:
       value: Saviran and the Heir are in a casual relationship
       type: 0
       typeString: 
-  - id: 133
+  - id: 138
     fields:
     - title: Name
       value: RelationshipHeir.ConfessedTo
@@ -2070,7 +2180,7 @@ MonoBehaviour:
       value: The Heir has confessed their feelings for Saviran
       type: 0
       typeString: 
-  - id: 134
+  - id: 139
     fields:
     - title: Name
       value: RelationshipHeir.ToldTheTruth
@@ -2084,7 +2194,7 @@ MonoBehaviour:
       value: Saviran has told the Heir about the Diplomat's actions
       type: 0
       typeString: 
-  - id: 135
+  - id: 140
     fields:
     - title: Name
       value: Breach.Widened
@@ -2098,7 +2208,7 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
-  - id: 136
+  - id: 141
     fields:
     - title: Name
       value: GameState.Influence
@@ -2112,7 +2222,7 @@ MonoBehaviour:
       value: Saviran's influence level
       type: 0
       typeString: 
-  - id: 137
+  - id: 142
     fields:
     - title: Name
       value: GameState.ResourceFood
@@ -2126,7 +2236,7 @@ MonoBehaviour:
       value: The level of food that the survivors have
       type: 0
       typeString: 
-  - id: 138
+  - id: 143
     fields:
     - title: Name
       value: GameState.ResourceMaterials
@@ -2297,19 +2407,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 1
         destinationConversationID: 1
-        destinationDialogueID: 30
-        isConnector: 0
-        priority: 2
-      - originConversationID: 1
-        originDialogueID: 1
-        destinationConversationID: 1
-        destinationDialogueID: 31
-        isConnector: 0
-        priority: 2
-      - originConversationID: 1
-        originDialogueID: 1
-        destinationConversationID: 1
-        destinationDialogueID: 32
+        destinationDialogueID: 48
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2368,13 +2466,7 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: 
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 2
-        destinationConversationID: 2
-        destinationDialogueID: 1
-        isConnector: 0
-        priority: 2
+      outgoingLinks: []
       conditionsString: 
       userScript: 
       onExecute:
@@ -2383,7 +2475,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 570
-        y: 870
+        y: 920
         width: 160
         height: 30
     - id: 3
@@ -2449,8 +2541,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1042.5
-        y: 670
+        x: 822
+        y: 720
         width: 160
         height: 30
     - id: 4
@@ -2519,7 +2611,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 1042.5
-        y: 720
+        y: 770
         width: 160
         height: 30
     - id: 5
@@ -2588,8 +2680,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 570
-        y: 570
+        x: 465
+        y: 620
         width: 160
         height: 30
     - id: 6
@@ -2611,7 +2703,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: Next
+        value: 
         type: 0
         typeString: 
       - title: Dialogue Text
@@ -2657,7 +2749,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 150
-        y: 370
+        y: 420
         width: 160
         height: 30
     - id: 7
@@ -2727,8 +2819,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 727.5
-        y: 620
+        x: 570
+        y: 670
         width: 160
         height: 30
     - id: 8
@@ -2801,8 +2893,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 412.5
-        y: 620
+        x: 318
+        y: 670
         width: 160
         height: 30
     - id: 9
@@ -2871,8 +2963,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 66
-        y: 570
+        x: 45
+        y: 620
         width: 160
         height: 30
     - id: 10
@@ -2939,8 +3031,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 97.5
-        y: 620
+        x: 66
+        y: 670
         width: 160
         height: 30
     - id: 11
@@ -3009,8 +3101,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 318
-        y: 570
+        x: 255
+        y: 620
         width: 160
         height: 30
     - id: 12
@@ -3095,7 +3187,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 1042.5
-        y: 820
+        y: 870
         width: 160
         height: 30
     - id: 13
@@ -3168,7 +3260,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 412.5
-        y: 720
+        y: 770
         width: 160
         height: 30
     - id: 14
@@ -3247,7 +3339,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 97.5
-        y: 820
+        y: 870
         width: 160
         height: 30
     - id: 15
@@ -3320,7 +3412,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 1110
-        y: 770
+        y: 820
         width: 160
         height: 30
     - id: 16
@@ -3387,7 +3479,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 930
-        y: 770
+        y: 820
         width: 160
         height: 30
     - id: 17
@@ -3455,7 +3547,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 727.5
-        y: 720
+        y: 770
         width: 160
         height: 30
     - id: 18
@@ -3522,7 +3614,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 210
-        y: 770
+        y: 820
         width: 160
         height: 30
     - id: 19
@@ -3588,8 +3680,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 727.5
-        y: 670
+        x: 570
+        y: 720
         width: 160
         height: 30
     - id: 20
@@ -3657,7 +3749,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 412.5
-        y: 820
+        y: 870
         width: 160
         height: 30
     - id: 21
@@ -3728,8 +3820,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 97.5
-        y: 670
+        x: 66
+        y: 720
         width: 160
         height: 30
     - id: 22
@@ -3792,7 +3884,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 770
+        y: 820
         width: 160
         height: 30
     - id: 23
@@ -3814,7 +3906,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: Next
+        value: 
         type: 0
         typeString: 
       - title: Dialogue Text
@@ -3861,8 +3953,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 150
-        y: 470
+        x: 97.5
+        y: 520
         width: 160
         height: 30
     - id: 24
@@ -3884,7 +3976,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: Next
+        value: 
         type: 0
         typeString: 
       - title: Dialogue Text
@@ -3931,8 +4023,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 97.5
-        y: 420
+        x: 150
+        y: 470
         width: 160
         height: 30
     - id: 25
@@ -3999,7 +4091,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 390
-        y: 770
+        y: 820
         width: 160
         height: 30
     - id: 26
@@ -4066,7 +4158,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 570
-        y: 770
+        y: 820
         width: 160
         height: 30
     - id: 27
@@ -4133,7 +4225,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 727.5
-        y: 820
+        y: 870
         width: 160
         height: 30
     - id: 28
@@ -4213,7 +4305,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 570
-        y: 170
+        y: 220
         width: 160
         height: 30
     - id: 29
@@ -4235,7 +4327,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: Next
+        value: 
         type: 0
         typeString: 
       - title: Dialogue Text
@@ -4280,8 +4372,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1042.5
-        y: 620
+        x: 1074
+        y: 720
         width: 160
         height: 30
     - id: 30
@@ -4303,7 +4395,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: You wanted to see me, Neave?
+        value: 
         type: 0
         typeString: 
       - title: Dialogue Text
@@ -4348,7 +4440,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 150
-        y: 120
+        y: 170
         width: 160
         height: 30
     - id: 31
@@ -4370,7 +4462,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: Good morning, Neave
+        value: 
         type: 0
         typeString: 
       - title: Dialogue Text
@@ -4415,7 +4507,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 570
-        y: 120
+        y: 170
         width: 160
         height: 30
     - id: 32
@@ -4437,7 +4529,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: Please let this be good news.
+        value: 
         type: 0
         typeString: 
       - title: Dialogue Text
@@ -4482,7 +4574,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 990
-        y: 120
+        y: 170
         width: 160
         height: 30
     - id: 33
@@ -4538,7 +4630,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 33
         destinationConversationID: 1
-        destinationDialogueID: 36
+        destinationDialogueID: 49
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -4549,7 +4641,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 990
-        y: 220
+        y: 270
         width: 160
         height: 30
     - id: 34
@@ -4616,7 +4708,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 150
-        y: 220
+        y: 270
         width: 160
         height: 30
     - id: 35
@@ -4672,7 +4764,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 35
         destinationConversationID: 1
-        destinationDialogueID: 36
+        destinationDialogueID: 49
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -4683,7 +4775,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 570
-        y: 220
+        y: 270
         width: 160
         height: 30
     - id: 36
@@ -4705,7 +4797,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: Next
+        value: 
         type: 0
         typeString: 
       - title: Dialogue Text
@@ -4757,7 +4849,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 885
-        y: 270
+        y: 370
         width: 160
         height: 30
     - id: 37
@@ -4779,7 +4871,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: Continue listening
+        value: 
         type: 0
         typeString: 
       - title: Dialogue Text
@@ -4826,7 +4918,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 570
-        y: 320
+        y: 420
         width: 160
         height: 30
     - id: 38
@@ -4848,7 +4940,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: Continue listening
+        value: 
         type: 0
         typeString: 
       - title: Dialogue Text
@@ -4900,7 +4992,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 570
-        y: 370
+        y: 470
         width: 160
         height: 30
     - id: 39
@@ -4922,7 +5014,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: Continue listening
+        value: 
         type: 0
         typeString: 
       - title: Dialogue Text
@@ -4974,7 +5066,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 570
-        y: 470
+        y: 570
         width: 160
         height: 30
     - id: 40
@@ -4996,7 +5088,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: Continue listening
+        value: 
         type: 0
         typeString: 
       - title: Dialogue Text
@@ -5048,7 +5140,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 412.5
-        y: 420
+        y: 520
         width: 160
         height: 30
     - id: 41
@@ -5111,7 +5203,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 255
-        y: 270
+        y: 320
         width: 160
         height: 30
     - id: 42
@@ -5174,7 +5266,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 990
-        y: 370
+        y: 470
         width: 160
         height: 30
     - id: 43
@@ -5241,7 +5333,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 990
-        y: 320
+        y: 420
         width: 160
         height: 30
     - id: 44
@@ -5303,8 +5395,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1042.5
-        y: 520
+        x: 1095
+        y: 620
         width: 160
         height: 30
     - id: 45
@@ -5371,7 +5463,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 990
-        y: 470
+        y: 570
         width: 160
         height: 30
     - id: 46
@@ -5434,7 +5526,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 822
-        y: 570
+        y: 670
         width: 160
         height: 30
     - id: 47
@@ -5500,17 +5592,166 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 727.5
-        y: 520
+        x: 885
+        y: 620
+        width: 160
+        height: 30
+    - id: 48
+      fields:
+      - title: Title
+        value: 'Narration: "Neave is where she always is, stand..."'
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 0
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Neave is where she always is, standing at her desk in the hall and
+          examining a map of the area. She lifts her regal crown of horns as you
+          approach, greeting you with that same gentle smile she always has.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: Articy Id
+        value: 0x010000000000B65A
+        type: 0
+        typeString: 
+      - title: InputId
+        value: 0x010000000000B65D
+        type: 0
+        typeString: 
+      - title: OutputId
+        value: 0x010000000000B65E
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 48
+        destinationConversationID: 1
+        destinationDialogueID: 30
+        isConnector: 0
+        priority: 2
+      - originConversationID: 1
+        originDialogueID: 48
+        destinationConversationID: 1
+        destinationDialogueID: 31
+        isConnector: 0
+        priority: 2
+      - originConversationID: 1
+        originDialogueID: 48
+        destinationConversationID: 1
+        destinationDialogueID: 32
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 570
+        y: 120
+        width: 160
+        height: 30
+    - id: 49
+      fields:
+      - title: Title
+        value: 'Narration: "Neave''s smile seems to deepen with..."'
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 0
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Neave's smile seems to deepen with that same infinite patience she
+          always has.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: Articy Id
+        value: 0x010000000000B664
+        type: 0
+        typeString: 
+      - title: InputId
+        value: 0x010000000000B667
+        type: 0
+        typeString: 
+      - title: OutputId
+        value: 0x010000000000B668
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 49
+        destinationConversationID: 1
+        destinationDialogueID: 36
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 885
+        y: 320
         width: 160
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.6100004
+    canvasZoom: 0.9100001
   - id: 2
     fields:
     - title: Title
-      value: Vertical Slice/Speak to the others
+      value: Speak to the Assassin
       type: 0
       typeString: 
     - title: Description
@@ -5518,844 +5759,15 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Actor
-      value: -1
-      type: 5
-      typeString: CustomFieldType_Actor
-    - title: Conversant
-      value: -1
-      type: 5
-      typeString: CustomFieldType_Actor
-    - title: Articy Id
-      value: 0x010000000000B5E6
-      type: 0
-      typeString: 
-    overrideSettings:
-      useOverrides: 0
-      overrideSubtitleSettings: 0
-      showNPCSubtitlesDuringLine: 1
-      showNPCSubtitlesWithResponses: 1
-      showPCSubtitlesDuringLine: 0
-      skipPCSubtitleAfterResponseMenu: 0
-      subtitleCharsPerSecond: 30
-      minSubtitleSeconds: 2
-      continueButton: 0
-      overrideSequenceSettings: 0
-      defaultSequence: 
-      defaultPlayerSequence: 
-      defaultResponseMenuSequence: 
-      overrideInputSettings: 0
-      alwaysForceResponseMenu: 1
-      includeInvalidEntries: 0
-      responseTimeout: 0
-      cancelSubtitle:
-        key: 27
-        buttonName: 
-      cancelConversation:
-        key: 27
-        buttonName: 
-    nodeColor: 
-    dialogueEntries:
-    - id: 0
-      fields:
-      - title: Title
-        value: START
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x010000000000B5E6
-        type: 0
-        typeString: 
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 0
-        destinationConversationID: 2
-        destinationDialogueID: 1
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 1
-      fields:
-      - title: Title
-        value: input
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x010000000000B5E9
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x010000000000B5E9
-        type: 0
-        typeString: 
-      conversationID: 2
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 1
-        destinationConversationID: 2
-        destinationDialogueID: 4
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 3
-      fields:
-      - title: Title
-        value: 'Jump to: [Choosing a champion]'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x01000000000079F8
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x01000000000079F9
-        type: 0
-        typeString: 
-      conversationID: 2
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 3
-        destinationConversationID: 2
-        destinationDialogueID: 4
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 4
-      fields:
-      - title: Title
-        value: Choosing a champion
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000000787
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000000789
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x010000000000078A
-        type: 0
-        typeString: 
-      conversationID: 2
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
-  - id: 3
-    fields:
-    - title: Title
-      value: Vertical Slice/Speak to others 2
-      type: 0
-      typeString: 
-    - title: Description
-      value: 
-      type: 0
-      typeString: 
-    - title: Actor
-      value: -1
-      type: 5
-      typeString: CustomFieldType_Actor
-    - title: Conversant
-      value: -1
-      type: 5
-      typeString: CustomFieldType_Actor
-    - title: Articy Id
-      value: 0x010000000000B5FA
-      type: 0
-      typeString: 
-    overrideSettings:
-      useOverrides: 0
-      overrideSubtitleSettings: 0
-      showNPCSubtitlesDuringLine: 1
-      showNPCSubtitlesWithResponses: 1
-      showPCSubtitlesDuringLine: 0
-      skipPCSubtitleAfterResponseMenu: 0
-      subtitleCharsPerSecond: 30
-      minSubtitleSeconds: 2
-      continueButton: 0
-      overrideSequenceSettings: 0
-      defaultSequence: 
-      defaultPlayerSequence: 
-      defaultResponseMenuSequence: 
-      overrideInputSettings: 0
-      alwaysForceResponseMenu: 1
-      includeInvalidEntries: 0
-      responseTimeout: 0
-      cancelSubtitle:
-        key: 27
-        buttonName: 
-      cancelConversation:
-        key: 27
-        buttonName: 
-    nodeColor: 
-    dialogueEntries:
-    - id: 0
-      fields:
-      - title: Title
-        value: START
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x010000000000B5FA
-        type: 0
-        typeString: 
-      conversationID: 3
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 3
-        originDialogueID: 0
-        destinationConversationID: 3
-        destinationDialogueID: 1
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 1
-      fields:
-      - title: Title
-        value: input
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x010000000000B5FD
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x010000000000B5FD
-        type: 0
-        typeString: 
-      conversationID: 3
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 3
-        originDialogueID: 1
-        destinationConversationID: 3
-        destinationDialogueID: 5
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 3
-      fields:
-      - title: Title
-        value: 'Jump to: [Return to Neave]'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x01000000000094B7
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x01000000000094BA
-        type: 0
-        typeString: 
-      conversationID: 3
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: "--Check conditions for conversation\nVariable[\"ConvMerc.Conversation2\"]==true 
-        or \nVariable[\"ConvAssassin.Conversation2\"] == true  or \nVariable[\"ConvFriend.AskedToLead\"]
-        == true  or \nVariable[\"ConvScorned.Conversation2\"] == true"
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 4
-      fields:
-      - title: Title
-        value: 'Jump to: [Talk to the others]'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000001370
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000001373
-        type: 0
-        typeString: 
-      conversationID: 3
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 3
-        originDialogueID: 4
-        destinationConversationID: 3
-        destinationDialogueID: 5
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 5
-      fields:
-      - title: Title
-        value: Talk to the others
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000000792
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000000794
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x0100000000000795
-        type: 0
-        typeString: 
-      conversationID: 3
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 3
-        originDialogueID: 5
-        destinationConversationID: 3
-        destinationDialogueID: 3
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
-  - id: 4
-    fields:
-    - title: Title
-      value: Vertical Slice/Speak to Neave/Speak to Neave Conversation
-      type: 0
-      typeString: 
-    - title: Description
-      value: Neave is where she always is, standing at her desk in the hall and examining
-        a map of the area. She lifts her regal crown of horns as you approach, greeting
-        you with that same gentle smile she always has.
-      type: 0
-      typeString: 
-    - title: Actor
-      value: 2
-      type: 5
-      typeString: CustomFieldType_Actor
-    - title: Conversant
       value: 1
       type: 5
       typeString: CustomFieldType_Actor
-    - title: Articy Id
-      value: 0x010000000000786F
-      type: 0
-      typeString: 
-    overrideSettings:
-      useOverrides: 0
-      overrideSubtitleSettings: 0
-      showNPCSubtitlesDuringLine: 1
-      showNPCSubtitlesWithResponses: 1
-      showPCSubtitlesDuringLine: 0
-      skipPCSubtitleAfterResponseMenu: 0
-      subtitleCharsPerSecond: 30
-      minSubtitleSeconds: 2
-      continueButton: 0
-      overrideSequenceSettings: 0
-      defaultSequence: 
-      defaultPlayerSequence: 
-      defaultResponseMenuSequence: 
-      overrideInputSettings: 0
-      alwaysForceResponseMenu: 1
-      includeInvalidEntries: 0
-      responseTimeout: 0
-      cancelSubtitle:
-        key: 27
-        buttonName: 
-      cancelConversation:
-        key: 27
-        buttonName: 
-    nodeColor: 
-    dialogueEntries:
-    - id: 0
-      fields:
-      - title: Title
-        value: START
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x010000000000786F
-        type: 0
-        typeString: 
-      conversationID: 4
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 4
-        originDialogueID: 0
-        destinationConversationID: 4
-        destinationDialogueID: 1
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 1
-      fields:
-      - title: Title
-        value: input
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000007872
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000007872
-        type: 0
-        typeString: 
-      conversationID: 4
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
-  - id: 5
-    fields:
-    - title: Title
-      value: Vertical Slice/Next/Next Conversation
-      type: 0
-      typeString: 
-    - title: Description
-      value: Neave's smile seems to deepen with that same infinite patience she always
-        has.
-      type: 0
-      typeString: 
-    - title: Actor
-      value: 2
-      type: 5
-      typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 1
+      value: -1
       type: 5
       typeString: CustomFieldType_Actor
     - title: Articy Id
-      value: 0x010000000000794B
+      value: 0x0100000000001351
       type: 0
       typeString: 
     overrideSettings:
@@ -6395,11 +5807,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -6415,10 +5827,10 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Articy Id
-        value: 0x010000000000794B
+        value: 0x0100000000001351
         type: 0
         typeString: 
-      conversationID: 5
+      conversationID: 2
       isRoot: 0
       isGroup: 0
       nodeColor: 
@@ -6426,9 +5838,9 @@ MonoBehaviour:
       falseConditionAction: 
       conditionPriority: 2
       outgoingLinks:
-      - originConversationID: 5
+      - originConversationID: 2
         originDialogueID: 0
-        destinationConversationID: 5
+        destinationConversationID: 2
         destinationDialogueID: 1
         isConnector: 0
         priority: 2
@@ -6454,11 +5866,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 1
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -6474,14 +5886,14 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Articy Id
-        value: 0x010000000000794E
+        value: 0x0100000000001354
         type: 0
         typeString: 
       - title: InputId
-        value: 0x010000000000794E
+        value: 0x0100000000001354
         type: 0
         typeString: 
-      conversationID: 5
+      conversationID: 2
       isRoot: 0
       isGroup: 1
       nodeColor: 
