@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 935899b62f48ae5498594680ed17d133, type: 3}
   m_Name: VerticalSlice
   m_EditorClassIdentifier: 
-  version: 12/05/2022 3:52:59 AM
+  version: 17/05/2022 11:16:15 AM
   author: articy:draft 3.1.33
   description: 
   globalUserScript: 
@@ -2992,6 +2992,20 @@ MonoBehaviour:
       value: Friend's Game State
       type: 0
       typeString: 
+  - id: 169
+    fields:
+    - title: Name
+      value: CharState.ScornedActive
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: Scorned Game State
+      type: 0
+      typeString: 
   conversations:
   - id: 1
     fields:
@@ -3149,10 +3163,16 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 1
         destinationConversationID: 1
-        destinationDialogueID: 48
+        destinationDialogueID: 40
         isConnector: 0
         priority: 2
-      conditionsString: Variable["ConvTrackerAdvisor.Conv1"] == false
+      - originConversationID: 1
+        originDialogueID: 1
+        destinationConversationID: 1
+        destinationDialogueID: 41
+        isConnector: 0
+        priority: 2
+      conditionsString: 
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -3212,7 +3232,7 @@ MonoBehaviour:
       conditionsString: 
       userScript: '--Set conv state
 
-        Variable["ConvTrackerAdvisor.Conv1"]
+        Variable["CharState.MercenaryActive"]
         = true'
       onExecute:
         m_PersistentCalls:
@@ -3345,11 +3365,11 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 4
         destinationConversationID: 1
-        destinationDialogueID: 15
+        destinationDialogueID: 12
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["Act1Progress.AskAssassin"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3483,7 +3503,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 6
         destinationConversationID: 1
-        destinationDialogueID: 24
+        destinationDialogueID: 19
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -3622,13 +3642,13 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 8
         destinationConversationID: 1
-        destinationDialogueID: 16
+        destinationDialogueID: 13
         isConnector: 0
         priority: 2
       - originConversationID: 1
         originDialogueID: 8
         destinationConversationID: 1
-        destinationDialogueID: 19
+        destinationDialogueID: 16
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -3766,11 +3786,11 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 10
         destinationConversationID: 1
-        destinationDialogueID: 21
+        destinationDialogueID: 12
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["Act1Progress.AskSelf"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3903,25 +3923,25 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 12
         destinationConversationID: 1
-        destinationDialogueID: 22
+        destinationDialogueID: 42
         isConnector: 0
         priority: 2
       - originConversationID: 1
         originDialogueID: 12
         destinationConversationID: 1
-        destinationDialogueID: 18
+        destinationDialogueID: 15
         isConnector: 0
         priority: 2
       - originConversationID: 1
         originDialogueID: 12
         destinationConversationID: 1
-        destinationDialogueID: 25
+        destinationDialogueID: 20
         isConnector: 0
         priority: 2
       - originConversationID: 1
         originDialogueID: 12
         destinationConversationID: 1
-        destinationDialogueID: 26
+        destinationDialogueID: 21
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -3936,231 +3956,6 @@ MonoBehaviour:
         width: 160
         height: 30
     - id: 13
-      fields:
-      - title: Title
-        value: '//Saviran has asked to send the Advisor
-
-          Act1Progress.AskAdvisor
-          = true'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000000FC8
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000000FC9
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x0100000000000FCA
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 13
-        destinationConversationID: 1
-        destinationDialogueID: 12
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: '--Saviran has asked to send the Advisor
-
-        Variable["Act1Progress.AskAdvisor"]
-        = true; '
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 14
-      fields:
-      - title: Title
-        value: Conversation
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000000FCC
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000000FCD
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x0100000000000FCE
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 14
-        destinationConversationID: 1
-        destinationDialogueID: 9
-        isConnector: 0
-        priority: 2
-      - originConversationID: 1
-        originDialogueID: 14
-        destinationConversationID: 1
-        destinationDialogueID: 11
-        isConnector: 0
-        priority: 2
-      - originConversationID: 1
-        originDialogueID: 14
-        destinationConversationID: 1
-        destinationDialogueID: 5
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 15
-      fields:
-      - title: Title
-        value: '//saviran has asked to send the Assassin
-
-          Act1Progress.AskAssassin
-          = true'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000000FD1
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000000FD2
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x0100000000000FD3
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 15
-        destinationConversationID: 1
-        destinationDialogueID: 12
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: '--saviran has asked to send the Assassin
-
-        Variable["Act1Progress.AskAssassin"]
-        = true; '
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 16
       fields:
       - title: Title
         value: 'Saviran: "I understand."'
@@ -4211,13 +4006,13 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 16
+        originDialogueID: 13
         destinationConversationID: 1
-        destinationDialogueID: 13
+        destinationDialogueID: 12
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["Act1Progress.AskAdvisor"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4227,7 +4022,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 17
+    - id: 14
       fields:
       - title: Title
         value: 'Advisor: "I guarantee there is. But I can say..."'
@@ -4279,9 +4074,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 17
+        originDialogueID: 14
         destinationConversationID: 1
-        destinationDialogueID: 16
+        destinationDialogueID: 13
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -4295,7 +4090,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 18
+    - id: 15
       fields:
       - title: Title
         value: 'Saviran: "Thanks for the advice"'
@@ -4346,9 +4141,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 18
+        originDialogueID: 15
         destinationConversationID: 1
-        destinationDialogueID: 20
+        destinationDialogueID: 17
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -4362,7 +4157,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 19
+    - id: 16
       fields:
       - title: Title
         value: 'Saviran: "Surely there''s more to you than tha..."'
@@ -4413,9 +4208,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 19
+        originDialogueID: 16
         destinationConversationID: 1
-        destinationDialogueID: 17
+        destinationDialogueID: 14
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -4429,7 +4224,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 20
+    - id: 17
       fields:
       - title: Title
         value: 'Advisor: "Quite literally my job. Remember, w..."'
@@ -4481,13 +4276,13 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 20
+        originDialogueID: 17
         destinationConversationID: 1
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["ConvTrackerAdvisor.Conv1"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4497,143 +4292,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 21
-      fields:
-      - title: Title
-        value: '// Saviran has asked to send themself
-
-          Act1Progress.AskSelf
-          = true'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000000FF4
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000000FF5
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x0100000000000FF6
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 21
-        destinationConversationID: 1
-        destinationDialogueID: 12
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: '-- Saviran has asked to send themself
-
-        Variable["Act1Progress.AskSelf"]
-        = true; '
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 22
-      fields:
-      - title: Title
-        value: 'Jump to: [Conversation]'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000000FF8
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000000FF9
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 22
-        destinationConversationID: 1
-        destinationDialogueID: 14
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 23
+    - id: 18
       fields:
       - title: Title
         value: 'Advisor: "Also, don''t forget that whoever you..."'
@@ -4687,9 +4346,21 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 23
+        originDialogueID: 18
         destinationConversationID: 1
-        destinationDialogueID: 14
+        destinationDialogueID: 9
+        isConnector: 0
+        priority: 2
+      - originConversationID: 1
+        originDialogueID: 18
+        destinationConversationID: 1
+        destinationDialogueID: 11
+        isConnector: 0
+        priority: 2
+      - originConversationID: 1
+        originDialogueID: 18
+        destinationConversationID: 1
+        destinationDialogueID: 5
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -4703,7 +4374,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 24
+    - id: 19
       fields:
       - title: Title
         value: 'Advisor: "Since anyone you send can realistic..."'
@@ -4757,9 +4428,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 24
+        originDialogueID: 19
         destinationConversationID: 1
-        destinationDialogueID: 23
+        destinationDialogueID: 18
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -4773,7 +4444,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 25
+    - id: 20
       fields:
       - title: Title
         value: 'Saviran: "No, nothing yet."'
@@ -4824,9 +4495,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 25
+        originDialogueID: 20
         destinationConversationID: 1
-        destinationDialogueID: 27
+        destinationDialogueID: 22
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -4840,7 +4511,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 26
+    - id: 21
       fields:
       - title: Title
         value: 'Saviran: "I can''t think of anything."'
@@ -4891,9 +4562,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 26
+        originDialogueID: 21
         destinationConversationID: 1
-        destinationDialogueID: 27
+        destinationDialogueID: 22
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -4907,7 +4578,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 27
+    - id: 22
       fields:
       - title: Title
         value: 'Advisor: "Well. I shall be here if you need m..."'
@@ -4958,13 +4629,13 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 27
+        originDialogueID: 22
         destinationConversationID: 1
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["ConvTrackerAdvisor.Conv1"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4974,7 +4645,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 28
+    - id: 23
       fields:
       - title: Title
         value: 'Advisor: "Greetings, Saviran. I hope you have..."'
@@ -5026,21 +4697,21 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 28
+        originDialogueID: 23
         destinationConversationID: 1
-        destinationDialogueID: 34
+        destinationDialogueID: 29
         isConnector: 0
         priority: 2
       - originConversationID: 1
-        originDialogueID: 28
+        originDialogueID: 23
         destinationConversationID: 1
-        destinationDialogueID: 35
+        destinationDialogueID: 30
         isConnector: 0
         priority: 2
       - originConversationID: 1
-        originDialogueID: 28
+        originDialogueID: 23
         destinationConversationID: 1
-        destinationDialogueID: 33
+        destinationDialogueID: 28
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5054,7 +4725,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 29
+    - id: 24
       fields:
       - title: Title
         value: 'Advisor: "There appears to be no more that we..."'
@@ -5106,7 +4777,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 29
+        originDialogueID: 24
         destinationConversationID: 1
         destinationDialogueID: 6
         isConnector: 0
@@ -5122,7 +4793,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 30
+    - id: 25
       fields:
       - title: Title
         value: 'Saviran: "You wanted to see me, Neave?"'
@@ -5173,9 +4844,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 30
+        originDialogueID: 25
         destinationConversationID: 1
-        destinationDialogueID: 28
+        destinationDialogueID: 23
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5189,7 +4860,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 31
+    - id: 26
       fields:
       - title: Title
         value: 'Saviran: "Good morning, Neave."'
@@ -5240,9 +4911,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 31
+        originDialogueID: 26
         destinationConversationID: 1
-        destinationDialogueID: 28
+        destinationDialogueID: 23
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5256,7 +4927,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 32
+    - id: 27
       fields:
       - title: Title
         value: 'Saviran: "Please let this be good news."'
@@ -5307,9 +4978,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 32
+        originDialogueID: 27
         destinationConversationID: 1
-        destinationDialogueID: 28
+        destinationDialogueID: 23
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5323,7 +4994,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 33
+    - id: 28
       fields:
       - title: Title
         value: 'Saviran: "Take me through it one last time."'
@@ -5374,9 +5045,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 33
+        originDialogueID: 28
         destinationConversationID: 1
-        destinationDialogueID: 49
+        destinationDialogueID: 38
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5390,7 +5061,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 34
+    - id: 29
       fields:
       - title: Title
         value: 'Saviran: "I remember the plan. Where are we a..."'
@@ -5441,9 +5112,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 34
+        originDialogueID: 29
         destinationConversationID: 1
-        destinationDialogueID: 41
+        destinationDialogueID: 36
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5457,7 +5128,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 35
+    - id: 30
       fields:
       - title: Title
         value: 'Saviran: "Not that I''ve forgotten..."'
@@ -5508,9 +5179,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 35
+        originDialogueID: 30
         destinationConversationID: 1
-        destinationDialogueID: 49
+        destinationDialogueID: 38
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5524,7 +5195,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 36
+    - id: 31
       fields:
       - title: Title
         value: 'Advisor: "As we have discussed in the past, t..."'
@@ -5576,9 +5247,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 36
+        originDialogueID: 31
         destinationConversationID: 1
-        destinationDialogueID: 37
+        destinationDialogueID: 32
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5592,7 +5263,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 37
+    - id: 32
       fields:
       - title: Title
         value: 'Advisor: "The area that this castle falls in..."'
@@ -5645,9 +5316,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 37
+        originDialogueID: 32
         destinationConversationID: 1
-        destinationDialogueID: 38
+        destinationDialogueID: 33
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5661,7 +5332,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 38
+    - id: 33
       fields:
       - title: Title
         value: 'Advisor: "Fortunately for us, the Mistress'' i..."'
@@ -5713,9 +5384,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 38
+        originDialogueID: 33
         destinationConversationID: 1
-        destinationDialogueID: 40
+        destinationDialogueID: 35
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5729,7 +5400,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 39
+    - id: 34
       fields:
       - title: Title
         value: 'Advisor: "Thankfully, we were able to... proc..."'
@@ -5781,9 +5452,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 39
+        originDialogueID: 34
         destinationConversationID: 1
-        destinationDialogueID: 29
+        destinationDialogueID: 24
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5797,7 +5468,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 40
+    - id: 35
       fields:
       - title: Title
         value: 'Advisor: "Impressive performances at her Tour..."'
@@ -5849,9 +5520,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 40
+        originDialogueID: 35
         destinationConversationID: 1
-        destinationDialogueID: 39
+        destinationDialogueID: 34
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5865,7 +5536,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 41
+    - id: 36
       fields:
       - title: Title
         value: 'Jump to: [Advisor: "There appears to be no more that we..."]'
@@ -5912,9 +5583,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 41
+        originDialogueID: 36
         destinationConversationID: 1
-        destinationDialogueID: 29
+        destinationDialogueID: 24
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5928,397 +5599,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 42
-      fields:
-      - title: Title
-        value: 'Jump to: [Advisor: "There appears to be no more that we..."]'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000007983
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000007984
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 42
-        destinationConversationID: 1
-        destinationDialogueID: 29
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 43
-      fields:
-      - title: Title
-        value: 'Saviran: "I remember the plan. Where are we a..."'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: I remember the plan. Where are we at now?
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: I remember the plan. Where are we at now?
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000007987
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000007988
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x0100000000007989
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 43
-        destinationConversationID: 1
-        destinationDialogueID: 42
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 44
-      fields:
-      - title: Title
-        value: 'Jump to: [Advisor: "There appears to be no more that we..."]'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000007992
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000007993
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 44
-        destinationConversationID: 1
-        destinationDialogueID: 29
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 45
-      fields:
-      - title: Title
-        value: 'Saviran: "I remember the plan. Where are we a..."'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: I remember the plan. Where are we at now?
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: I remember the plan. Where are we at now?
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000007996
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000007997
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x0100000000007998
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 45
-        destinationConversationID: 1
-        destinationDialogueID: 44
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 46
-      fields:
-      - title: Title
-        value: 'Jump to: [Advisor: "There appears to be no more that we..."]'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x01000000000079A1
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x01000000000079A2
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 46
-        destinationConversationID: 1
-        destinationDialogueID: 29
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 47
-      fields:
-      - title: Title
-        value: 'Saviran: "I remember the plan. Where are we a..."'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: I remember the plan. Where are we at now?
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: I remember the plan. Where are we at now?
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x01000000000079A5
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x01000000000079A6
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x01000000000079A7
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 47
-        destinationConversationID: 1
-        destinationDialogueID: 46
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 48
+    - id: 37
       fields:
       - title: Title
         value: 'Narration: "Neave is where she always is, stand..."'
@@ -6371,27 +5652,21 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 48
+        originDialogueID: 37
         destinationConversationID: 1
-        destinationDialogueID: 30
+        destinationDialogueID: 25
         isConnector: 0
         priority: 2
       - originConversationID: 1
-        originDialogueID: 48
+        originDialogueID: 37
         destinationConversationID: 1
-        destinationDialogueID: 31
+        destinationDialogueID: 26
         isConnector: 0
         priority: 2
       - originConversationID: 1
-        originDialogueID: 48
+        originDialogueID: 37
         destinationConversationID: 1
-        destinationDialogueID: 32
-        isConnector: 0
-        priority: 2
-      - originConversationID: 1
-        originDialogueID: 48
-        destinationConversationID: 1
-        destinationDialogueID: 50
+        destinationDialogueID: 27
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -6405,7 +5680,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 49
+    - id: 38
       fields:
       - title: Title
         value: 'Narration: "Neave''s smile seems to deepen with..."'
@@ -6457,9 +5732,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 49
+        originDialogueID: 38
         destinationConversationID: 1
-        destinationDialogueID: 36
+        destinationDialogueID: 31
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -6473,7 +5748,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 50
+    - id: 39
       fields:
       - title: Title
         value: 'Saviran: "Skip"'
@@ -6524,9 +5799,543 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 50
+        originDialogueID: 39
         destinationConversationID: 1
         destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["ConvTrackerAdvisor.Conv1"] = true
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 30
+    - id: 40
+      fields:
+      - title: Title
+        value: 'Saviran: "Play"'
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Play
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: Articy Id
+        value: 0x010000000000E5EA
+        type: 0
+        typeString: 
+      - title: InputId
+        value: 0x010000000000E5ED
+        type: 0
+        typeString: 
+      - title: OutputId
+        value: 0x010000000000E5EE
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 40
+        destinationConversationID: 1
+        destinationDialogueID: 37
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 30
+    - id: 41
+      fields:
+      - title: Title
+        value: 'Jump to: [Saviran: "Skip"]'
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: Continue()
+        type: 0
+        typeString: 
+      - title: Articy Id
+        value: 0x010000000000E5F2
+        type: 0
+        typeString: 
+      - title: InputId
+        value: 0x010000000000E5F5
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 1
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 41
+        destinationConversationID: 1
+        destinationDialogueID: 39
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 30
+    - id: 42
+      fields:
+      - title: Title
+        value: 'Saviran: "More questions"'
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: More questions
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: Articy Id
+        value: 0x010000000000E5FD
+        type: 0
+        typeString: 
+      - title: InputId
+        value: 0x010000000000E600
+        type: 0
+        typeString: 
+      - title: OutputId
+        value: 0x010000000000E601
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 42
+        destinationConversationID: 1
+        destinationDialogueID: 44
+        isConnector: 0
+        priority: 2
+      - originConversationID: 1
+        originDialogueID: 42
+        destinationConversationID: 1
+        destinationDialogueID: 45
+        isConnector: 0
+        priority: 2
+      - originConversationID: 1
+        originDialogueID: 42
+        destinationConversationID: 1
+        destinationDialogueID: 46
+        isConnector: 0
+        priority: 2
+      - originConversationID: 1
+        originDialogueID: 42
+        destinationConversationID: 1
+        destinationDialogueID: 47
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 30
+    - id: 43
+      fields:
+      - title: Title
+        value: 'Jump to: [Advisor: "Anything else?"]'
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: Continue()
+        type: 0
+        typeString: 
+      - title: Articy Id
+        value: 0x010000000000E604
+        type: 0
+        typeString: 
+      - title: InputId
+        value: 0x010000000000E607
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 1
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 43
+        destinationConversationID: 1
+        destinationDialogueID: 12
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 30
+    - id: 44
+      fields:
+      - title: Title
+        value: 'Saviran: "Nevermind"'
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Nevermind
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: Articy Id
+        value: 0x010000000000E609
+        type: 0
+        typeString: 
+      - title: InputId
+        value: 0x010000000000E60C
+        type: 0
+        typeString: 
+      - title: OutputId
+        value: 0x010000000000E60D
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 44
+        destinationConversationID: 1
+        destinationDialogueID: 43
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 30
+    - id: 45
+      fields:
+      - title: Title
+        value: 'Jump to: [Saviran: "What about you?"]'
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: Continue()
+        type: 0
+        typeString: 
+      - title: Articy Id
+        value: 0x010000000000E611
+        type: 0
+        typeString: 
+      - title: InputId
+        value: 0x010000000000E614
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 1
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 45
+        destinationConversationID: 1
+        destinationDialogueID: 11
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 30
+    - id: 46
+      fields:
+      - title: Title
+        value: 'Jump to: [Saviran: "What about me?"]'
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: Continue()
+        type: 0
+        typeString: 
+      - title: Articy Id
+        value: 0x010000000000E616
+        type: 0
+        typeString: 
+      - title: InputId
+        value: 0x010000000000E619
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 1
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 46
+        destinationConversationID: 1
+        destinationDialogueID: 9
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 30
+    - id: 47
+      fields:
+      - title: Title
+        value: 'Jump to: [Saviran: "What about the assassin?"]'
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: Continue()
+        type: 0
+        typeString: 
+      - title: Articy Id
+        value: 0x010000000000E61B
+        type: 0
+        typeString: 
+      - title: InputId
+        value: 0x010000000000E61E
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 1
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 47
+        destinationConversationID: 1
+        destinationDialogueID: 5
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -24747,13 +24556,13 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 1
         destinationConversationID: 7
-        destinationDialogueID: 154
+        destinationDialogueID: 151
         isConnector: 0
         priority: 2
       - originConversationID: 7
         originDialogueID: 1
         destinationConversationID: 7
-        destinationDialogueID: 153
+        destinationDialogueID: 150
         isConnector: 0
         priority: 2
       conditionsString: Variable["ConvTrackerAdvisor.Conv1"] == true
@@ -24877,7 +24686,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 3
         destinationConversationID: 7
-        destinationDialogueID: 134
+        destinationDialogueID: 131
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -24944,7 +24753,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 4
         destinationConversationID: 7
-        destinationDialogueID: 135
+        destinationDialogueID: 132
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -25011,7 +24820,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 5
         destinationConversationID: 7
-        destinationDialogueID: 134
+        destinationDialogueID: 131
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -25078,7 +24887,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 6
         destinationConversationID: 7
-        destinationDialogueID: 134
+        destinationDialogueID: 131
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -25145,7 +24954,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 7
         destinationConversationID: 7
-        destinationDialogueID: 136
+        destinationDialogueID: 133
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -25212,7 +25021,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 8
         destinationConversationID: 7
-        destinationDialogueID: 136
+        destinationDialogueID: 133
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -25279,7 +25088,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 9
         destinationConversationID: 7
-        destinationDialogueID: 136
+        destinationDialogueID: 133
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -25425,11 +25234,14 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 11
         destinationConversationID: 7
-        destinationDialogueID: 80
+        destinationDialogueID: 134
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: '--Scorned Ruthless increase
+
+        Variable["RelationshipScorned.Ruthless"]
+        =+1'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -25492,11 +25304,14 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 12
         destinationConversationID: 7
-        destinationDialogueID: 81
+        destinationDialogueID: 134
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: '--Scorned Noble increase
+
+        Variable["RelationshipScorned.Noble"]
+        =+1'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -25559,11 +25374,14 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 13
         destinationConversationID: 7
-        destinationDialogueID: 82
+        destinationDialogueID: 134
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: '--Scorned Idealist increase
+
+        Variable["RelationshipScorned.Idealist"]
+        =+1'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -25693,7 +25511,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 15
         destinationConversationID: 7
-        destinationDialogueID: 83
+        destinationDialogueID: 80
         isConnector: 0
         priority: 2
       - originConversationID: 7
@@ -25705,7 +25523,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 15
         destinationConversationID: 7
-        destinationDialogueID: 84
+        destinationDialogueID: 81
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -25772,7 +25590,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 16
         destinationConversationID: 7
-        destinationDialogueID: 138
+        destinationDialogueID: 135
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -25918,7 +25736,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 18
         destinationConversationID: 7
-        destinationDialogueID: 86
+        destinationDialogueID: 83
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -25985,7 +25803,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 19
         destinationConversationID: 7
-        destinationDialogueID: 87
+        destinationDialogueID: 84
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -26052,7 +25870,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 20
         destinationConversationID: 7
-        destinationDialogueID: 85
+        destinationDialogueID: 82
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -26119,13 +25937,13 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 21
         destinationConversationID: 7
-        destinationDialogueID: 89
+        destinationDialogueID: 86
         isConnector: 0
         priority: 2
       - originConversationID: 7
         originDialogueID: 21
         destinationConversationID: 7
-        destinationDialogueID: 90
+        destinationDialogueID: 87
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -26192,7 +26010,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 22
         destinationConversationID: 7
-        destinationDialogueID: 139
+        destinationDialogueID: 136
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -26266,13 +26084,13 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 23
         destinationConversationID: 7
-        destinationDialogueID: 93
+        destinationDialogueID: 90
         isConnector: 0
         priority: 2
       - originConversationID: 7
         originDialogueID: 23
         destinationConversationID: 7
-        destinationDialogueID: 94
+        destinationDialogueID: 91
         isConnector: 0
         priority: 2
       - originConversationID: 7
@@ -26553,7 +26371,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 27
         destinationConversationID: 7
-        destinationDialogueID: 139
+        destinationDialogueID: 136
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -26687,7 +26505,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 29
         destinationConversationID: 7
-        destinationDialogueID: 149
+        destinationDialogueID: 146
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -26821,7 +26639,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 31
         destinationConversationID: 7
-        destinationDialogueID: 146
+        destinationDialogueID: 143
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -26956,7 +26774,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 33
         destinationConversationID: 7
-        destinationDialogueID: 145
+        destinationDialogueID: 142
         isConnector: 0
         priority: 2
       - originConversationID: 7
@@ -27170,7 +26988,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 36
         destinationConversationID: 7
-        destinationDialogueID: 103
+        destinationDialogueID: 100
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -27237,7 +27055,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 37
         destinationConversationID: 7
-        destinationDialogueID: 102
+        destinationDialogueID: 99
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -27518,7 +27336,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 41
         destinationConversationID: 7
-        destinationDialogueID: 101
+        destinationDialogueID: 98
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -27585,7 +27403,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 42
         destinationConversationID: 7
-        destinationDialogueID: 95
+        destinationDialogueID: 92
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -27652,7 +27470,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 43
         destinationConversationID: 7
-        destinationDialogueID: 96
+        destinationDialogueID: 93
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -27719,7 +27537,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 44
         destinationConversationID: 7
-        destinationDialogueID: 97
+        destinationDialogueID: 94
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -27786,7 +27604,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 45
         destinationConversationID: 7
-        destinationDialogueID: 105
+        destinationDialogueID: 102
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -27854,7 +27672,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 46
         destinationConversationID: 7
-        destinationDialogueID: 105
+        destinationDialogueID: 102
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -27922,7 +27740,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 47
         destinationConversationID: 7
-        destinationDialogueID: 105
+        destinationDialogueID: 102
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -28069,7 +27887,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 49
         destinationConversationID: 7
-        destinationDialogueID: 99
+        destinationDialogueID: 96
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -28136,7 +27954,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 50
         destinationConversationID: 7
-        destinationDialogueID: 98
+        destinationDialogueID: 95
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -28203,7 +28021,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 51
         destinationConversationID: 7
-        destinationDialogueID: 100
+        destinationDialogueID: 97
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -28270,7 +28088,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 52
         destinationConversationID: 7
-        destinationDialogueID: 113
+        destinationDialogueID: 110
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -28337,7 +28155,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 53
         destinationConversationID: 7
-        destinationDialogueID: 113
+        destinationDialogueID: 110
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -28405,7 +28223,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 54
         destinationConversationID: 7
-        destinationDialogueID: 113
+        destinationDialogueID: 110
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -28474,7 +28292,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 55
         destinationConversationID: 7
-        destinationDialogueID: 114
+        destinationDialogueID: 111
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -28675,7 +28493,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 58
         destinationConversationID: 7
-        destinationDialogueID: 141
+        destinationDialogueID: 138
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -28742,19 +28560,19 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 59
         destinationConversationID: 7
-        destinationDialogueID: 119
+        destinationDialogueID: 116
         isConnector: 0
         priority: 2
       - originConversationID: 7
         originDialogueID: 59
         destinationConversationID: 7
-        destinationDialogueID: 120
+        destinationDialogueID: 117
         isConnector: 0
         priority: 2
       - originConversationID: 7
         originDialogueID: 59
         destinationConversationID: 7
-        destinationDialogueID: 121
+        destinationDialogueID: 118
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -28821,7 +28639,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 60
         destinationConversationID: 7
-        destinationDialogueID: 147
+        destinationDialogueID: 144
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -28975,7 +28793,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 62
         destinationConversationID: 7
-        destinationDialogueID: 148
+        destinationDialogueID: 145
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -29042,7 +28860,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 63
         destinationConversationID: 7
-        destinationDialogueID: 148
+        destinationDialogueID: 145
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -29111,7 +28929,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 64
         destinationConversationID: 7
-        destinationDialogueID: 148
+        destinationDialogueID: 145
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -29178,7 +28996,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 65
         destinationConversationID: 7
-        destinationDialogueID: 150
+        destinationDialogueID: 147
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -29312,7 +29130,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 67
         destinationConversationID: 7
-        destinationDialogueID: 149
+        destinationDialogueID: 146
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -29844,7 +29662,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 75
         destinationConversationID: 7
-        destinationDialogueID: 104
+        destinationDialogueID: 101
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -29912,7 +29730,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 76
         destinationConversationID: 7
-        destinationDialogueID: 104
+        destinationDialogueID: 101
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -30131,224 +29949,6 @@ MonoBehaviour:
     - id: 80
       fields:
       - title: Title
-        value: '//Scorned Ruthless increase
-
-          RelationshipScorned.Ruthless
-          =+1'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 4
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000007D9B
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000007D9D
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x0100000000007D9E
-        type: 0
-        typeString: 
-      conversationID: 7
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 7
-        originDialogueID: 80
-        destinationConversationID: 7
-        destinationDialogueID: 137
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: '--Scorned Ruthless increase
-
-        Variable["RelationshipScorned.Ruthless"]
-        =+1; '
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 81
-      fields:
-      - title: Title
-        value: '//Scorned Noble increase
-
-          RelationshipScorned.Noble =+1'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 4
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000007D9F
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000007DA0
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x0100000000007DA1
-        type: 0
-        typeString: 
-      conversationID: 7
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 7
-        originDialogueID: 81
-        destinationConversationID: 7
-        destinationDialogueID: 137
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: '--Scorned Noble increase
-
-        Variable["RelationshipScorned.Noble"]
-        =+1; '
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 82
-      fields:
-      - title: Title
-        value: '//Scorned Idealist increase
-
-          RelationshipScorned.Idealist
-          =+1'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 4
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000007DA3
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000007DA4
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x0100000000007DA5
-        type: 0
-        typeString: 
-      conversationID: 7
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 7
-        originDialogueID: 82
-        destinationConversationID: 7
-        destinationDialogueID: 137
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: '--Scorned Idealist increase
-
-        Variable["RelationshipScorned.Idealist"]
-        =+1; '
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 83
-      fields:
-      - title: Title
         value: 'Saviran: "Loaded question, but in this instan..."'
         type: 0
         typeString: 
@@ -30398,9 +29998,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 83
+        originDialogueID: 80
         destinationConversationID: 7
-        destinationDialogueID: 138
+        destinationDialogueID: 135
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -30414,7 +30014,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 84
+    - id: 81
       fields:
       - title: Title
         value: 'Saviran: "I want to ask you if you''re okay wi..."'
@@ -30467,9 +30067,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 84
+        originDialogueID: 81
         destinationConversationID: 7
-        destinationDialogueID: 138
+        destinationDialogueID: 135
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -30483,7 +30083,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 85
+    - id: 82
       fields:
       - title: Title
         value: '//Scorned Idealist increase
@@ -30537,7 +30137,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 85
+        originDialogueID: 82
         destinationConversationID: 7
         destinationDialogueID: 21
         isConnector: 0
@@ -30556,7 +30156,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 86
+    - id: 83
       fields:
       - title: Title
         value: '//Scorned Ruthless increase
@@ -30610,7 +30210,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 86
+        originDialogueID: 83
         destinationConversationID: 7
         destinationDialogueID: 21
         isConnector: 0
@@ -30629,7 +30229,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 87
+    - id: 84
       fields:
       - title: Title
         value: '//Scorned Noble increase
@@ -30682,7 +30282,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 87
+        originDialogueID: 84
         destinationConversationID: 7
         destinationDialogueID: 21
         isConnector: 0
@@ -30701,7 +30301,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 88
+    - id: 85
       fields:
       - title: Title
         value: 'Saviran: "Well, Vaelyn did made a good case f..."'
@@ -30752,9 +30352,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 88
+        originDialogueID: 85
         destinationConversationID: 7
-        destinationDialogueID: 139
+        destinationDialogueID: 136
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -30768,7 +30368,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 89
+    - id: 86
       fields:
       - title: Title
         value: Vaelyn spoken to
@@ -30819,21 +30419,21 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 89
+        originDialogueID: 86
         destinationConversationID: 7
         destinationDialogueID: 22
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 89
+        originDialogueID: 86
         destinationConversationID: 7
-        destinationDialogueID: 88
+        destinationDialogueID: 85
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 89
+        originDialogueID: 86
         destinationConversationID: 7
-        destinationDialogueID: 91
+        destinationDialogueID: 88
         isConnector: 0
         priority: 2
       conditionsString: '-- if the Mercenary has been spoken to
@@ -30850,7 +30450,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 90
+    - id: 87
       fields:
       - title: Title
         value: If Vaelyn has not been spoken to
@@ -30901,21 +30501,21 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 90
+        originDialogueID: 87
         destinationConversationID: 7
-        destinationDialogueID: 91
+        destinationDialogueID: 88
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 90
+        originDialogueID: 87
         destinationConversationID: 7
         destinationDialogueID: 27
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 90
+        originDialogueID: 87
         destinationConversationID: 7
-        destinationDialogueID: 92
+        destinationDialogueID: 89
         isConnector: 0
         priority: 2
       conditionsString: '-- if the Mercenary has not been spoken to
@@ -30932,7 +30532,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 91
+    - id: 88
       fields:
       - title: Title
         value: 'Saviran: "I could always put in Vaelyn"'
@@ -30983,9 +30583,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 91
+        originDialogueID: 88
         destinationConversationID: 7
-        destinationDialogueID: 139
+        destinationDialogueID: 136
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -30999,7 +30599,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 92
+    - id: 89
       fields:
       - title: Title
         value: 'Saviran: "Why isn''t Vaelyn an option?"'
@@ -31050,9 +30650,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 92
+        originDialogueID: 89
         destinationConversationID: 7
-        destinationDialogueID: 139
+        destinationDialogueID: 136
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -31066,7 +30666,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 93
+    - id: 90
       fields:
       - title: Title
         value: 'Saviran: "I haven''t asked, but I was going to..."'
@@ -31117,7 +30717,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 93
+        originDialogueID: 90
         destinationConversationID: 7
         destinationDialogueID: 76
         isConnector: 0
@@ -31136,7 +30736,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 94
+    - id: 91
       fields:
       - title: Title
         value: 'Saviran: "I asked him. He made his case."'
@@ -31187,7 +30787,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 94
+        originDialogueID: 91
         destinationConversationID: 7
         destinationDialogueID: 76
         isConnector: 0
@@ -31207,7 +30807,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 95
+    - id: 92
       fields:
       - title: Title
         value: '//Scorned Ruthless increase
@@ -31261,7 +30861,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 95
+        originDialogueID: 92
         destinationConversationID: 7
         destinationDialogueID: 45
         isConnector: 0
@@ -31280,7 +30880,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 96
+    - id: 93
       fields:
       - title: Title
         value: '//Scorned Idealist increase
@@ -31334,7 +30934,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 96
+        originDialogueID: 93
         destinationConversationID: 7
         destinationDialogueID: 46
         isConnector: 0
@@ -31353,7 +30953,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 97
+    - id: 94
       fields:
       - title: Title
         value: '//Scorned Noble increase
@@ -31406,7 +31006,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 97
+        originDialogueID: 94
         destinationConversationID: 7
         destinationDialogueID: 47
         isConnector: 0
@@ -31425,7 +31025,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 98
+    - id: 95
       fields:
       - title: Title
         value: '//Scorned Noble increase
@@ -31478,7 +31078,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 98
+        originDialogueID: 95
         destinationConversationID: 7
         destinationDialogueID: 53
         isConnector: 0
@@ -31497,7 +31097,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 99
+    - id: 96
       fields:
       - title: Title
         value: '//Scorned Idealist increase
@@ -31551,7 +31151,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 99
+        originDialogueID: 96
         destinationConversationID: 7
         destinationDialogueID: 52
         isConnector: 0
@@ -31570,7 +31170,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 100
+    - id: 97
       fields:
       - title: Title
         value: '//Scorned Ruthless increase
@@ -31624,7 +31224,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 100
+        originDialogueID: 97
         destinationConversationID: 7
         destinationDialogueID: 54
         isConnector: 0
@@ -31643,7 +31243,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 101
+    - id: 98
       fields:
       - title: Title
         value: '//Scorned Idealist increase
@@ -31697,7 +31297,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 101
+        originDialogueID: 98
         destinationConversationID: 7
         destinationDialogueID: 32
         isConnector: 0
@@ -31716,7 +31316,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 102
+    - id: 99
       fields:
       - title: Title
         value: '//Scorned Noble increase
@@ -31769,7 +31369,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 102
+        originDialogueID: 99
         destinationConversationID: 7
         destinationDialogueID: 35
         isConnector: 0
@@ -31788,7 +31388,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 103
+    - id: 100
       fields:
       - title: Title
         value: '//Scorned Ruthless increase
@@ -31842,7 +31442,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 103
+        originDialogueID: 100
         destinationConversationID: 7
         destinationDialogueID: 30
         isConnector: 0
@@ -31861,7 +31461,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 104
+    - id: 101
       fields:
       - title: Title
         value: 'Scorned: "It would appear, then, that you do..."'
@@ -31913,19 +31513,19 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 104
+        originDialogueID: 101
         destinationConversationID: 7
         destinationDialogueID: 42
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 104
+        originDialogueID: 101
         destinationConversationID: 7
         destinationDialogueID: 43
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 104
+        originDialogueID: 101
         destinationConversationID: 7
         destinationDialogueID: 44
         isConnector: 0
@@ -31941,7 +31541,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 105
+    - id: 102
       fields:
       - title: Title
         value: 'Scorned: "You are asking me for my input to m..."'
@@ -31993,9 +31593,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 105
+        originDialogueID: 102
         destinationConversationID: 7
-        destinationDialogueID: 106
+        destinationDialogueID: 103
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -32009,7 +31609,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 106
+    - id: 103
       fields:
       - title: Title
         value: 'Scorned: "Let me ask you something."'
@@ -32060,21 +31660,21 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 106
+        originDialogueID: 103
         destinationConversationID: 7
-        destinationDialogueID: 107
+        destinationDialogueID: 104
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 106
+        originDialogueID: 103
         destinationConversationID: 7
-        destinationDialogueID: 108
+        destinationDialogueID: 105
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 106
+        originDialogueID: 103
         destinationConversationID: 7
-        destinationDialogueID: 109
+        destinationDialogueID: 106
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -32088,7 +31688,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 107
+    - id: 104
       fields:
       - title: Title
         value: 'Saviran: "Certainly."'
@@ -32139,7 +31739,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 107
+        originDialogueID: 104
         destinationConversationID: 7
         destinationDialogueID: 48
         isConnector: 0
@@ -32155,7 +31755,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 108
+    - id: 105
       fields:
       - title: Title
         value: 'Saviran: "If I say ''no'', will you do it anywa..."'
@@ -32206,7 +31806,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 108
+        originDialogueID: 105
         destinationConversationID: 7
         destinationDialogueID: 48
         isConnector: 0
@@ -32222,7 +31822,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 109
+    - id: 106
       fields:
       - title: Title
         value: 'Saviran: "Okay?"'
@@ -32273,7 +31873,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 109
+        originDialogueID: 106
         destinationConversationID: 7
         destinationDialogueID: 48
         isConnector: 0
@@ -32289,7 +31889,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 110
+    - id: 107
       fields:
       - title: Title
         value: 'Saviran: "That''s all a matter of opinion, isn..."'
@@ -32340,9 +31940,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 110
+        originDialogueID: 107
         destinationConversationID: 7
-        destinationDialogueID: 142
+        destinationDialogueID: 139
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -32356,7 +31956,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 111
+    - id: 108
       fields:
       - title: Title
         value: 'Scorned: "So the very fact that you are askin..."'
@@ -32408,7 +32008,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 111
+        originDialogueID: 108
         destinationConversationID: 7
         destinationDialogueID: 55
         isConnector: 0
@@ -32424,7 +32024,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 112
+    - id: 109
       fields:
       - title: Title
         value: 'Scorned: "You cannot compel me to do what I w..."'
@@ -32476,9 +32076,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 112
+        originDialogueID: 109
         destinationConversationID: 7
-        destinationDialogueID: 111
+        destinationDialogueID: 108
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -32492,7 +32092,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 113
+    - id: 110
       fields:
       - title: Title
         value: 'Scorned: "Why does it matter to you what I wa..."'
@@ -32543,9 +32143,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 113
+        originDialogueID: 110
         destinationConversationID: 7
-        destinationDialogueID: 140
+        destinationDialogueID: 137
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -32559,7 +32159,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 114
+    - id: 111
       fields:
       - title: Title
         value: 'Scorned: "So my... opinion is that you should..."'
@@ -32611,19 +32211,19 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 114
+        originDialogueID: 111
         destinationConversationID: 7
         destinationDialogueID: 56
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 114
+        originDialogueID: 111
         destinationConversationID: 7
         destinationDialogueID: 57
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 114
+        originDialogueID: 111
         destinationConversationID: 7
         destinationDialogueID: 58
         isConnector: 0
@@ -32639,7 +32239,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 115
+    - id: 112
       fields:
       - title: Title
         value: 'Scorned: "Are you... goading me?"'
@@ -32690,21 +32290,21 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 115
+        originDialogueID: 112
         destinationConversationID: 7
-        destinationDialogueID: 110
+        destinationDialogueID: 107
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 115
+        originDialogueID: 112
         destinationConversationID: 7
-        destinationDialogueID: 116
+        destinationDialogueID: 113
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 115
+        originDialogueID: 112
         destinationConversationID: 7
-        destinationDialogueID: 117
+        destinationDialogueID: 114
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -32718,7 +32318,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 116
+    - id: 113
       fields:
       - title: Title
         value: 'Saviran: "No. Was just an observation."'
@@ -32769,9 +32369,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 116
+        originDialogueID: 113
         destinationConversationID: 7
-        destinationDialogueID: 142
+        destinationDialogueID: 139
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -32785,7 +32385,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 117
+    - id: 114
       fields:
       - title: Title
         value: 'Saviran: "Why? Do you feel goaded?"'
@@ -32836,9 +32436,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 117
+        originDialogueID: 114
         destinationConversationID: 7
-        destinationDialogueID: 142
+        destinationDialogueID: 139
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -32852,7 +32452,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 118
+    - id: 115
       fields:
       - title: Title
         value: 'Scorned: "What game do you play at, here?"'
@@ -32903,21 +32503,21 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 118
+        originDialogueID: 115
         destinationConversationID: 7
-        destinationDialogueID: 122
+        destinationDialogueID: 119
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 118
+        originDialogueID: 115
         destinationConversationID: 7
-        destinationDialogueID: 123
+        destinationDialogueID: 120
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 118
+        originDialogueID: 115
         destinationConversationID: 7
-        destinationDialogueID: 124
+        destinationDialogueID: 121
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -32931,7 +32531,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 119
+    - id: 116
       fields:
       - title: Title
         value: 'Saviran: "Easier than I thought it would be,..."'
@@ -32982,9 +32582,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 119
+        originDialogueID: 116
         destinationConversationID: 7
-        destinationDialogueID: 141
+        destinationDialogueID: 138
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -32998,7 +32598,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 120
+    - id: 117
       fields:
       - title: Title
         value: 'Saviran: "Took longer than I wanted, but I le..."'
@@ -33049,9 +32649,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 120
+        originDialogueID: 117
         destinationConversationID: 7
-        destinationDialogueID: 141
+        destinationDialogueID: 138
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33065,7 +32665,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 121
+    - id: 118
       fields:
       - title: Title
         value: 'Saviran: "I''ll just have to practice more on..."'
@@ -33116,9 +32716,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 121
+        originDialogueID: 118
         destinationConversationID: 7
-        destinationDialogueID: 141
+        destinationDialogueID: 138
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33132,7 +32732,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 122
+    - id: 119
       fields:
       - title: Title
         value: 'Saviran: "If you were going to hurt me, you w..."'
@@ -33183,9 +32783,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 122
+        originDialogueID: 119
         destinationConversationID: 7
-        destinationDialogueID: 125
+        destinationDialogueID: 122
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33199,7 +32799,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 123
+    - id: 120
       fields:
       - title: Title
         value: 'Saviran: "It''s very past the time you would s..."'
@@ -33250,9 +32850,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 123
+        originDialogueID: 120
         destinationConversationID: 7
-        destinationDialogueID: 125
+        destinationDialogueID: 122
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33266,7 +32866,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 124
+    - id: 121
       fields:
       - title: Title
         value: 'Saviran: "Oh. Should I apologise? I am sorry."'
@@ -33317,9 +32917,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 124
+        originDialogueID: 121
         destinationConversationID: 7
-        destinationDialogueID: 125
+        destinationDialogueID: 122
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33333,7 +32933,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 125
+    - id: 122
       fields:
       - title: Title
         value: Untitled hub
@@ -33384,21 +32984,21 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 125
+        originDialogueID: 122
         destinationConversationID: 7
-        destinationDialogueID: 126
+        destinationDialogueID: 123
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 125
+        originDialogueID: 122
         destinationConversationID: 7
-        destinationDialogueID: 127
+        destinationDialogueID: 124
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 125
+        originDialogueID: 122
         destinationConversationID: 7
-        destinationDialogueID: 128
+        destinationDialogueID: 125
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33412,7 +33012,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 126
+    - id: 123
       fields:
       - title: Title
         value: 'Saviran: "Besides, if you wanted to hurt me,..."'
@@ -33463,9 +33063,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 126
+        originDialogueID: 123
         destinationConversationID: 7
-        destinationDialogueID: 143
+        destinationDialogueID: 140
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33479,7 +33079,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 127
+    - id: 124
       fields:
       - title: Title
         value: 'Saviran: "I''ve spent my life being hunted. Yo..."'
@@ -33530,9 +33130,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 127
+        originDialogueID: 124
         destinationConversationID: 7
-        destinationDialogueID: 143
+        destinationDialogueID: 140
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33546,7 +33146,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 128
+    - id: 125
       fields:
       - title: Title
         value: 'Saviran: "If you didn''t want this conversatio..."'
@@ -33597,9 +33197,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 128
+        originDialogueID: 125
         destinationConversationID: 7
-        destinationDialogueID: 143
+        destinationDialogueID: 140
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33613,7 +33213,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 129
+    - id: 126
       fields:
       - title: Title
         value: 'Scorned: "You know you are powerless. You kno..."'
@@ -33665,21 +33265,21 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 129
+        originDialogueID: 126
         destinationConversationID: 7
-        destinationDialogueID: 130
+        destinationDialogueID: 127
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 129
+        originDialogueID: 126
         destinationConversationID: 7
-        destinationDialogueID: 131
+        destinationDialogueID: 128
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 129
+        originDialogueID: 126
         destinationConversationID: 7
-        destinationDialogueID: 132
+        destinationDialogueID: 129
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33693,7 +33293,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 130
+    - id: 127
       fields:
       - title: Title
         value: 'Saviran: "You haven''t given me a reason to."'
@@ -33744,9 +33344,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 130
+        originDialogueID: 127
         destinationConversationID: 7
-        destinationDialogueID: 144
+        destinationDialogueID: 141
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33760,7 +33360,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 131
+    - id: 128
       fields:
       - title: Title
         value: 'Saviran: "I''m all outta fear. Tapped dry."'
@@ -33811,9 +33411,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 131
+        originDialogueID: 128
         destinationConversationID: 7
-        destinationDialogueID: 144
+        destinationDialogueID: 141
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33827,7 +33427,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 132
+    - id: 129
       fields:
       - title: Title
         value: 'Saviran: "Honestly, fear gets in the way of m..."'
@@ -33878,9 +33478,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 132
+        originDialogueID: 129
         destinationConversationID: 7
-        destinationDialogueID: 144
+        destinationDialogueID: 141
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33894,7 +33494,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 133
+    - id: 130
       fields:
       - title: Title
         value: 'Narration: "The chamber is empty, as it had bee..."'
@@ -33947,19 +33547,19 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 133
+        originDialogueID: 130
         destinationConversationID: 7
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 133
+        originDialogueID: 130
         destinationConversationID: 7
         destinationDialogueID: 3
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 133
+        originDialogueID: 130
         destinationConversationID: 7
         destinationDialogueID: 6
         isConnector: 0
@@ -33975,7 +33575,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 134
+    - id: 131
       fields:
       - title: Title
         value: 'Narration: "Your voice seems to echo off the wa..."'
@@ -34027,7 +33627,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 134
+        originDialogueID: 131
         destinationConversationID: 7
         destinationDialogueID: 4
         isConnector: 0
@@ -34043,7 +33643,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 135
+    - id: 132
       fields:
       - title: Title
         value: 'Narration: "You don''t think you''ll ever get use..."'
@@ -34096,19 +33696,19 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 135
+        originDialogueID: 132
         destinationConversationID: 7
         destinationDialogueID: 7
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 135
+        originDialogueID: 132
         destinationConversationID: 7
         destinationDialogueID: 8
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 135
+        originDialogueID: 132
         destinationConversationID: 7
         destinationDialogueID: 9
         isConnector: 0
@@ -34124,7 +33724,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 136
+    - id: 133
       fields:
       - title: Title
         value: 'Narration: "Shadows coalesce before you, stretc..."'
@@ -34177,7 +33777,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 136
+        originDialogueID: 133
         destinationConversationID: 7
         destinationDialogueID: 10
         isConnector: 0
@@ -34193,7 +33793,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 137
+    - id: 134
       fields:
       - title: Title
         value: 'Narration: "As is typical for him, he simply ig..."'
@@ -34245,7 +33845,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 137
+        originDialogueID: 134
         destinationConversationID: 7
         destinationDialogueID: 14
         isConnector: 0
@@ -34261,7 +33861,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 138
+    - id: 135
       fields:
       - title: Title
         value: 'Narration: "Something about what you said seems..."'
@@ -34313,7 +33913,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 138
+        originDialogueID: 135
         destinationConversationID: 7
         destinationDialogueID: 17
         isConnector: 0
@@ -34329,7 +33929,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 139
+    - id: 136
       fields:
       - title: Title
         value: 'Narration: "That same infinitesimal head tilt...."'
@@ -34380,7 +33980,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 139
+        originDialogueID: 136
         destinationConversationID: 7
         destinationDialogueID: 23
         isConnector: 0
@@ -34396,7 +33996,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 140
+    - id: 137
       fields:
       - title: Title
         value: 'Narration: "Before you can really answer, he ho..."'
@@ -34448,9 +34048,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 140
+        originDialogueID: 137
         destinationConversationID: 7
-        destinationDialogueID: 112
+        destinationDialogueID: 109
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -34464,7 +34064,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 141
+    - id: 138
       fields:
       - title: Title
         value: 'Narration: "His wings went slightly slack at yo..."'
@@ -34516,9 +34116,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 141
+        originDialogueID: 138
         destinationConversationID: 7
-        destinationDialogueID: 115
+        destinationDialogueID: 112
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -34532,7 +34132,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 142
+    - id: 139
       fields:
       - title: Title
         value: 'Narration: "A single arm reaches out, a talon-l..."'
@@ -34584,9 +34184,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 142
+        originDialogueID: 139
         destinationConversationID: 7
-        destinationDialogueID: 118
+        destinationDialogueID: 115
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -34600,7 +34200,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 143
+    - id: 140
       fields:
       - title: Title
         value: 'Narration: "Slowly the hand withdraws, a ripple..."'
@@ -34652,9 +34252,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 143
+        originDialogueID: 140
         destinationConversationID: 7
-        destinationDialogueID: 129
+        destinationDialogueID: 126
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -34668,7 +34268,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 144
+    - id: 141
       fields:
       - title: Title
         value: 'Narration: "Something about your words seems to..."'
@@ -34720,7 +34320,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 144
+        originDialogueID: 141
         destinationConversationID: 7
         destinationDialogueID: 68
         isConnector: 0
@@ -34736,7 +34336,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 145
+    - id: 142
       fields:
       - title: Title
         value: 'Narration: "You purse your lips, keeping your o..."'
@@ -34787,7 +34387,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 145
+        originDialogueID: 142
         destinationConversationID: 7
         destinationDialogueID: 34
         isConnector: 0
@@ -34803,7 +34403,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 146
+    - id: 143
       fields:
       - title: Title
         value: 'Narration: "The sense that he has come to the e..."'
@@ -34856,13 +34456,13 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 146
+        originDialogueID: 143
         destinationConversationID: 7
         destinationDialogueID: 60
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 146
+        originDialogueID: 143
         destinationConversationID: 7
         destinationDialogueID: 29
         isConnector: 0
@@ -34878,7 +34478,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 147
+    - id: 144
       fields:
       - title: Title
         value: 'Narration: "He doesn''t sigh, but there is an ab..."'
@@ -34930,7 +34530,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 147
+        originDialogueID: 144
         destinationConversationID: 7
         destinationDialogueID: 61
         isConnector: 0
@@ -34946,7 +34546,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 148
+    - id: 145
       fields:
       - title: Title
         value: 'Narration: "He reacts like he had been struck,..."'
@@ -34998,7 +34598,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 148
+        originDialogueID: 145
         destinationConversationID: 7
         destinationDialogueID: 65
         isConnector: 0
@@ -35014,7 +34614,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 149
+    - id: 146
       fields:
       - title: Title
         value: 'Narration: "Immediately upon being dismissed, t..."'
@@ -35067,7 +34667,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 149
+        originDialogueID: 146
         destinationConversationID: 7
         destinationDialogueID: 28
         isConnector: 0
@@ -35083,7 +34683,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 150
+    - id: 147
       fields:
       - title: Title
         value: 'Narration: "You can''t say you''ve ever seen him..."'
@@ -35135,19 +34735,19 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 150
+        originDialogueID: 147
         destinationConversationID: 7
         destinationDialogueID: 79
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 150
+        originDialogueID: 147
         destinationConversationID: 7
         destinationDialogueID: 66
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 150
+        originDialogueID: 147
         destinationConversationID: 7
         destinationDialogueID: 78
         isConnector: 0
@@ -35163,7 +34763,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 151
+    - id: 148
       fields:
       - title: Title
         value: 'Scorned: "I do not wish to speak, Saviran. Le..."'
@@ -35224,7 +34824,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 152
+    - id: 149
       fields:
       - title: Title
         value: 'Narration: "You barely get a few steps into the..."'
@@ -35276,9 +34876,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 152
+        originDialogueID: 149
         destinationConversationID: 7
-        destinationDialogueID: 151
+        destinationDialogueID: 148
         isConnector: 0
         priority: 2
       conditionsString: Variable["ConvTrackerScorned.Conversation1"] == true
@@ -35292,7 +34892,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 153
+    - id: 150
       fields:
       - title: Title
         value: 'Saviran: "Skip"'
@@ -35343,7 +34943,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 153
+        originDialogueID: 150
         destinationConversationID: 7
         destinationDialogueID: 2
         isConnector: 0
@@ -35359,7 +34959,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 154
+    - id: 151
       fields:
       - title: Title
         value: 'Saviran: "Play"'
@@ -35410,15 +35010,15 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
-        originDialogueID: 154
+        originDialogueID: 151
         destinationConversationID: 7
-        destinationDialogueID: 152
+        destinationDialogueID: 149
         isConnector: 0
         priority: 2
       - originConversationID: 7
-        originDialogueID: 154
+        originDialogueID: 151
         destinationConversationID: 7
-        destinationDialogueID: 133
+        destinationDialogueID: 130
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -43761,7 +43361,7 @@ MonoBehaviour:
       - originConversationID: 9
         originDialogueID: 1
         destinationConversationID: 9
-        destinationDialogueID: 9
+        destinationDialogueID: 3
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -43965,7 +43565,7 @@ MonoBehaviour:
       - originConversationID: 9
         originDialogueID: 5
         destinationConversationID: 9
-        destinationDialogueID: 10
+        destinationDialogueID: 9
         isConnector: 0
         priority: 2
       conditionsString: '(--Begin conversation
@@ -44168,78 +43768,6 @@ MonoBehaviour:
     - id: 9
       fields:
       - title: Title
-        value: '//Setting game state
-
-          CharState.AdvisorActive = true'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x010000000000E504
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x010000000000E506
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x010000000000E507
-        type: 0
-        typeString: 
-      conversationID: 9
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 9
-        originDialogueID: 9
-        destinationConversationID: 9
-        destinationDialogueID: 3
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: '--Setting game state
-
-        Variable["CharState.AdvisorActive"]
-        = true; '
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 10
-      fields:
-      - title: Title
         value: '//Conv point check
 
           ConvTrackerAssassin.Conversation1 ==
@@ -44301,15 +43829,15 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 9
-        originDialogueID: 10
+        originDialogueID: 9
         destinationConversationID: 9
-        destinationDialogueID: 11
+        destinationDialogueID: 10
         isConnector: 0
         priority: 2
       - originConversationID: 9
-        originDialogueID: 10
+        originDialogueID: 9
         destinationConversationID: 9
-        destinationDialogueID: 12
+        destinationDialogueID: 11
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -44323,7 +43851,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 11
+    - id: 10
       fields:
       - title: Title
         value: '//Conv point check
@@ -44387,7 +43915,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 9
-        originDialogueID: 11
+        originDialogueID: 10
         destinationConversationID: 9
         destinationDialogueID: 7
         isConnector: 0
@@ -44406,7 +43934,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 12
+    - id: 11
       fields:
       - title: Title
         value: '!(//Conv point check
@@ -44470,9 +43998,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 9
-        originDialogueID: 12
+        originDialogueID: 11
         destinationConversationID: 9
-        destinationDialogueID: 13
+        destinationDialogueID: 12
         isConnector: 0
         priority: 2
       conditionsString: "(--Conv point check\nVariable[\"ConvTrackerAssassin.Conversation1\"]
@@ -44489,7 +44017,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 13
+    - id: 12
       fields:
       - title: Title
         value: '//Conv point check
@@ -44554,15 +44082,15 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 9
-        originDialogueID: 13
+        originDialogueID: 12
         destinationConversationID: 9
-        destinationDialogueID: 14
+        destinationDialogueID: 13
         isConnector: 0
         priority: 2
       - originConversationID: 9
-        originDialogueID: 13
+        originDialogueID: 12
         destinationConversationID: 9
-        destinationDialogueID: 15
+        destinationDialogueID: 14
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -44576,7 +44104,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 14
+    - id: 13
       fields:
       - title: Title
         value: '//Conv point check
@@ -44641,9 +44169,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 9
-        originDialogueID: 14
+        originDialogueID: 13
         destinationConversationID: 9
-        destinationDialogueID: 16
+        destinationDialogueID: 15
         isConnector: 0
         priority: 2
       conditionsString: "--Conv point check\nVariable[\"Act1Progress.AssassinChosen\"]
@@ -44661,7 +44189,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 15
+    - id: 14
       fields:
       - title: Title
         value: '!(//Conv point check
@@ -44726,9 +44254,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 9
-        originDialogueID: 15
+        originDialogueID: 14
         destinationConversationID: 9
-        destinationDialogueID: 17
+        destinationDialogueID: 16
         isConnector: 0
         priority: 2
       conditionsString: "(--Conv point check\nVariable[\"Act1Progress.AssassinChosen\"]
@@ -44747,7 +44275,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 16
+    - id: 15
       fields:
       - title: Title
         value: 'Jump to: [Rise for the day]'
@@ -44794,9 +44322,93 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 9
-        originDialogueID: 16
+        originDialogueID: 15
         destinationConversationID: 3
         destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 30
+    - id: 16
+      fields:
+      - title: Title
+        value: 'Act1Progress.AssassinChosen == true ||
+
+          Act1Progress.MercenaryChosen
+          == true ||
+
+          Act1Progress.ScornedChosen == true &&
+
+          ConvTrackerAssassin.Conversation2
+          == true||
+
+          ConvTrackerMerc.Conversation2 == true||
+
+          ConvTrackerScorned.Conversation2
+          == true||
+
+          ConvTrackerFriend.AskedToLead == true'
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: Continue()
+        type: 0
+        typeString: 
+      - title: Articy Id
+        value: 0x010000000000E5C5
+        type: 0
+        typeString: 
+      - title: InputId
+        value: 0x010000000000E5C7
+        type: 0
+        typeString: 
+      conversationID: 9
+      isRoot: 0
+      isGroup: 1
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 9
+        originDialogueID: 16
+        destinationConversationID: 9
+        destinationDialogueID: 17
+        isConnector: 0
+        priority: 2
+      - originConversationID: 9
+        originDialogueID: 16
+        destinationConversationID: 9
+        destinationDialogueID: 18
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -44859,90 +44471,6 @@ MonoBehaviour:
         value: 0x010000000000E5C5
         type: 0
         typeString: 
-      - title: InputId
-        value: 0x010000000000E5C7
-        type: 0
-        typeString: 
-      conversationID: 9
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 9
-        originDialogueID: 17
-        destinationConversationID: 9
-        destinationDialogueID: 18
-        isConnector: 0
-        priority: 2
-      - originConversationID: 9
-        originDialogueID: 17
-        destinationConversationID: 9
-        destinationDialogueID: 19
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 30
-    - id: 18
-      fields:
-      - title: Title
-        value: 'Act1Progress.AssassinChosen == true ||
-
-          Act1Progress.MercenaryChosen
-          == true ||
-
-          Act1Progress.ScornedChosen == true &&
-
-          ConvTrackerAssassin.Conversation2
-          == true||
-
-          ConvTrackerMerc.Conversation2 == true||
-
-          ConvTrackerScorned.Conversation2
-          == true||
-
-          ConvTrackerFriend.AskedToLead == true'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x010000000000E5C5
-        type: 0
-        typeString: 
       - title: OutputId
         value: 0x010000000000E5C8
         type: 0
@@ -44956,7 +44484,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 9
-        originDialogueID: 18
+        originDialogueID: 17
         destinationConversationID: 9
         destinationDialogueID: 8
         isConnector: 0
@@ -44975,7 +44503,7 @@ MonoBehaviour:
         y: 0
         width: 160
         height: 30
-    - id: 19
+    - id: 18
       fields:
       - title: Title
         value: '!(Act1Progress.AssassinChosen == true ||
@@ -45898,8 +45426,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 120
-        y: 20
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 1
@@ -45961,8 +45489,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 120
-        y: 70
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 3
@@ -46024,8 +45552,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 220
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 4
@@ -46103,8 +45631,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
-        y: 220
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 5
@@ -46178,8 +45706,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 270
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 6
@@ -46254,8 +45782,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
-        y: 270
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 7
@@ -46332,8 +45860,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 120
-        y: 120
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 8
@@ -46406,8 +45934,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 170
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 9
@@ -46480,8 +46008,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
-        y: 170
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 10
@@ -46543,8 +46071,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 320
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 11
@@ -46622,8 +46150,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
-        y: 320
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 12
@@ -46697,8 +46225,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 370
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 13
@@ -46767,8 +46295,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
-        y: 370
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 14
@@ -46824,8 +46352,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 120
-        y: 420
+        x: 0
+        y: 0
         width: 160
         height: 30
     entryGroups: []
