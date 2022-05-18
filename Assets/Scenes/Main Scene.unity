@@ -325,9 +325,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 515045484}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0127268d7d0e10b43be642fd60e6d786, type: 3}
+  m_Script: {fileID: 11500000, guid: edddc827e4c31f24ea716f04a4fa2057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  variableName: MercenaryActive
 --- !u!1001 &616238996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -535,7 +536,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 0}
+  selectedDatabase: {fileID: 11400000, guid: 5cbfc451fba377749920f1588519b66a, type: 2}
 --- !u!65 &660827185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -623,9 +624,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 660827182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664f47f6bd93691439930f5cbcfad73e, type: 3}
+  m_Script: {fileID: 11500000, guid: edddc827e4c31f24ea716f04a4fa2057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  variableName: FriendActive
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,9 +924,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 944438388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b1a267cd867861489b80b50e4757bce, type: 3}
+  m_Script: {fileID: 11500000, guid: edddc827e4c31f24ea716f04a4fa2057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  variableName: AssassinActive
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,7 +1392,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 0}
+  selectedDatabase: {fileID: 11400000, guid: 5cbfc451fba377749920f1588519b66a, type: 2}
 --- !u!65 &1221202071
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1477,9 +1480,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1221202068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 659ddac9ff48b154688e86449de04797, type: 3}
+  m_Script: {fileID: 11500000, guid: edddc827e4c31f24ea716f04a4fa2057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  variableName: ScornedActive
 --- !u!1 &1461196603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,7 +1598,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 0}
+  selectedDatabase: {fileID: 11400000, guid: 5cbfc451fba377749920f1588519b66a, type: 2}
 --- !u!65 &1461196606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1682,9 +1686,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1461196603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a47d678ef126f94cb6159be2d250908, type: 3}
+  m_Script: {fileID: 11500000, guid: edddc827e4c31f24ea716f04a4fa2057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  variableName: MistressActive
 --- !u!1 &1987848081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1966,6 +1971,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1987848081}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd4fb99131bd5004197207109e4d94e8, type: 3}
+  m_Script: {fileID: 11500000, guid: edddc827e4c31f24ea716f04a4fa2057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  variableName: AdvisorActive
