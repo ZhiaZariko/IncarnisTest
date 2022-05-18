@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PixelCrushers.DialogueSystem;
 
 public class MercenaryScript : MonoBehaviour
 {
@@ -13,6 +14,13 @@ public class MercenaryScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Lua.Run("return Variable['CharState'].AdvisorActive").asBool)
+        {
+            gameObjectAdvisor.setActive(true);
+        }
+        else
+        {
+            gameObjectAdvisor.setActive(false);
+        }
     }
 }
